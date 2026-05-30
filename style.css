@@ -1108,7 +1108,15 @@ body::before {
   .galeria-item.tall { grid-row: span 1; }
   .propuesta-texto { border-right: none; border-bottom: 1px solid var(--border); }
   .contacto-left { border-right: none; border-bottom: 1px solid var(--border); }
-  .caso-card.large, .caso-card.small, .caso-card.medium, .caso-card.tight, .caso-card.quarter { grid-column: span 12; }
-  .caso-card.tall { grid-row: span 1; }
   footer { flex-direction: column; gap: 1rem; text-align: center; }
+
+  /* casos grid: todas las cards en columna única */
+  .casos-grid {
+    grid-template-columns: 1fr;
+  }
+  .casos-grid .caso-card {
+    grid-column: 1 / -1 !important;
+    grid-row: auto !important;
+  }
+  .caso-thumb { max-height: 240px; }
 }
