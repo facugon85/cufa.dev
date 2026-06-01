@@ -267,9 +267,11 @@ nav {
 .btn-ghost:hover { border-color: var(--orange); color: var(--orange); }
 
 .hero-scroll {
-  position: absolute;
+  position: fixed;
   bottom: 2rem;
   right: 3rem;
+  z-index: 50;
+  transition: opacity 0.3s ease;
   font-family: var(--mono);
   font-size: 9px;
   letter-spacing: 0.2em;
@@ -1097,7 +1099,9 @@ body::before {
 }
 
 @media (max-width: 900px) {
-  nav { padding: 1.25rem 1.5rem; }
+  nav { padding: 1rem 1.25rem; }
+  .nav-links { display: none; }
+  .nav-cta { padding: 0.55rem 1rem; }
   .hero { grid-template-columns: 1fr; }
   .hero-photo { height: 50vh; }
   .hero-photo::after { background: linear-gradient(to bottom, transparent 50%, var(--bg) 100%); }

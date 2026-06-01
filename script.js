@@ -154,10 +154,23 @@ const counterObserver = new IntersectionObserver(entries => {
 }, { threshold: 0.5 });
 document.querySelectorAll('.stat-num').forEach(el => counterObserver.observe(el));
 
+/* ── AÑO DINÁMICO ── */
+const currentYear = new Date().getFullYear();
+document.querySelectorAll('#footer-year, #contact-year').forEach(el => {
+  el.textContent = currentYear;
+});
+
 /* ── NAV scroll state ── */
 const nav = document.querySelector('nav');
+const heroScrollEl = document.querySelector('.hero-scroll');
+const heroSection = document.querySelector('.hero');
 window.addEventListener('scroll', () => {
   nav.style.background = window.scrollY > 60
     ? 'rgba(10,10,10,0.97)'
     : 'linear-gradient(to bottom, rgba(10,10,10,0.95) 0%, transparent 100%)';
+  if (heroScrollEl && heroSection) {
+    const heroBottom = heroSection.getBoundingClientRect().bottom;
+    heroScrollEl.style.opacity = heroBottom < 100 ? '0' : '1';
+    heroScrollEl.style.pointerEvents = heroBottom < 100 ? 'none' : 'auto';
+  }
 });
