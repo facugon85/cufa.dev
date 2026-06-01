@@ -84,9 +84,12 @@ nav {
   text-transform: uppercase;
   color: var(--text-muted);
   text-decoration: none;
-  transition: color 0.2s;
+  transition: color 0.35s cubic-bezier(0.4, 0, 0.2, 1), transform 0.35s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.35s cubic-bezier(0.4, 0, 0.2, 1);
 }
-.nav-links a:hover { color: var(--orange); }
+.nav-links a:hover {
+  color: var(--orange);
+  transform: translateY(-3px);
+}
 
 .nav-cta {
   font-family: var(--mono);
@@ -100,6 +103,37 @@ nav {
   transition: background 0.2s;
 }
 .nav-cta:hover { background: var(--orange-dim); }
+
+.nav-end {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.lang-toggle {
+  background: none;
+  border: 1px solid rgba(240,237,232,0.25);
+  color: var(--text-dim);
+  font-family: var(--mono);
+  font-size: 9px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  padding: 5px 10px;
+  cursor: pointer;
+  transition: border-color 0.2s, color 0.2s;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.lang-toggle:hover { border-color: var(--orange); color: var(--orange); }
+
+[data-i18n] {
+  transition: opacity 0.35s cubic-bezier(0.4, 0, 0.2, 1), transform 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+}
+[data-i18n].lang-out {
+  opacity: 0;
+  transform: translateY(4px);
+}
 
 /* Hero */
 .hero {

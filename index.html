@@ -190,11 +190,17 @@
 <nav>
   <a href="#" class="nav-logo" data-text="CUFA.">CUFA.</a>
   <ul class="nav-links">
-    <li><a href="#casos">Casos</a></li>
-    <li><a href="#galeria">Galería</a></li>
-    <li><a href="#stack">Stack</a></li>
+    <li><a href="#casos" data-i18n="nav.casos">Casos</a></li>
+    <li><a href="#galeria" data-i18n="nav.galeria">Galería</a></li>
+    <li><a href="#stack" data-i18n="nav.stack">Stack</a></li>
   </ul>
-  <a href="#contacto" class="nav-cta">Hablemos →</a>
+  <div class="nav-end">
+    <button class="lang-toggle" id="lang-toggle">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="13" height="13" aria-hidden="true"><path d="M12.87 15.07l-2.54-2.51.03-.03A17.52 17.52 0 0 0 14.07 6H17V4h-7V2H8v2H1v2h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11.76-2.04zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2l-4.5-12zm-2.62 7l1.62-4.33L19.12 17h-3.24z"/></svg>
+      <span id="lang-label">EN</span>
+    </button>
+    <a href="#contacto" class="nav-cta" data-i18n="nav.cta">Hablemos →</a>
+  </div>
 </nav>
 
 <!-- HERO -->
@@ -207,13 +213,13 @@
   </div>
 
   <div class="hero-content">
-    <div class="hero-eyebrow">Creador Digital</div>
+    <div class="hero-eyebrow" data-i18n="hero.eyebrow">Creador Digital</div>
 
     <h1 class="hero-name">
       CU<span>FA.</span>
     </h1>
 
-    <p class="hero-tagline">
+    <p class="hero-tagline" data-i18n="hero.tagline">
       Desarrollo web · Automatización<br>
       Producción visual · SaaS escalable<br>
       Buenos Aires, Argentina
@@ -221,13 +227,13 @@
 
     <div class="hero-meta">
       <div class="hero-meta-item">
-        <span class="label">Hora</span>
+        <span class="label" data-i18n="hero.hora">Hora</span>
         <span id="clock">--:--:--</span>
         <span class="dot"></span>
       </div>
       <div class="hero-meta-item">
-        <span class="label">Estado</span>
-        <span style="color:var(--orange);">Disponible para proyectos</span>
+        <span class="label" data-i18n="hero.estado.label">Estado</span>
+        <span style="color:var(--orange);" data-i18n="hero.estado.value">Disponible para proyectos</span>
       </div>
       <div class="hero-meta-item">
         <span class="label">Engine</span>
@@ -236,12 +242,12 @@
     </div>
 
     <div class="hero-btns">
-      <a href="#proyectos" class="btn-primary">Ver Proyectos ↓</a>
-      <a href="https://wa.me/5491168980563" class="btn-ghost">WhatsApp ↗</a>
+      <a href="#proyectos" class="btn-primary" data-i18n="hero.btn.proyectos">Ver Proyectos ↓</a>
+      <a href="https://wa.me/5491168980563" class="btn-ghost" target="_blank" rel="noopener noreferrer">WhatsApp ↗</a>
     </div>
   </div>
 
-  <div class="hero-scroll">Scroll</div>
+  <div class="hero-scroll" data-i18n="hero.scroll">Scroll</div>
 </section>
 
 <!-- MARQUEE -->
@@ -266,13 +272,13 @@
 <div class="propuesta">
   <div class="propuesta-grid">
     <div class="propuesta-texto">
-      <div class="section-label">Propuesta de valor</div>
-      <h2 class="propuesta-titulo">
+      <div class="section-label" data-i18n="propuesta.label">Propuesta de valor</div>
+      <h2 class="propuesta-titulo" data-i18n="propuesta.titulo">
         Dev que<br>
         <span>entiende</span>
         el visual.
       </h2>
-      <p class="propuesta-desc">
+      <p class="propuesta-desc" data-i18n="propuesta.desc">
         No solo construyo lo que me pedís — diseño soluciones digitales que funcionan y se ven bien. La combinación de criterio visual, capacidad técnica y automatización es lo que diferencia un proyecto promedio de uno memorable.
       </p>
     </div>
@@ -281,29 +287,29 @@
       <div class="propuesta-item">
         <span class="propuesta-num">01</span>
         <div>
-          <div class="propuesta-item-title">Frontend de alto impacto</div>
-          <div class="propuesta-item-desc">React, Vite, animaciones fluidas. Interfaces que convierten y que los usuarios disfrutan usar.</div>
+          <div class="propuesta-item-title" data-i18n="propuesta.01.title">Frontend de alto impacto</div>
+          <div class="propuesta-item-desc" data-i18n="propuesta.01.desc">React, Vite, animaciones fluidas. Interfaces que convierten y que los usuarios disfrutan usar.</div>
         </div>
       </div>
       <div class="propuesta-item">
         <span class="propuesta-num">02</span>
         <div>
-          <div class="propuesta-item-title">SaaS & sistemas complejos</div>
-          <div class="propuesta-item-desc">Plataformas multitenant, paneles admin, integraciones API. Arquitecturas que escalan.</div>
+          <div class="propuesta-item-title" data-i18n="propuesta.02.title">SaaS & sistemas complejos</div>
+          <div class="propuesta-item-desc" data-i18n="propuesta.02.desc">Plataformas multitenant, paneles admin, integraciones API. Arquitecturas que escalan.</div>
         </div>
       </div>
       <div class="propuesta-item">
         <span class="propuesta-num">03</span>
         <div>
-          <div class="propuesta-item-title">Automatización inteligente</div>
-          <div class="propuesta-item-desc">Flujos con IA, integraciones con n8n, Zapier, APIs. Procesos que corren solos.</div>
+          <div class="propuesta-item-title" data-i18n="propuesta.03.title">Automatización inteligente</div>
+          <div class="propuesta-item-desc" data-i18n="propuesta.03.desc">Flujos con IA, integraciones con n8n, Zapier, APIs. Procesos que corren solos.</div>
         </div>
       </div>
       <div class="propuesta-item">
         <span class="propuesta-num">04</span>
         <div>
-          <div class="propuesta-item-title">Criterio visual de productor</div>
-          <div class="propuesta-item-desc">Años de fotografía aplicados al producto digital. Sé lo que se ve bien y por qué.</div>
+          <div class="propuesta-item-title" data-i18n="propuesta.04.title">Criterio visual de productor</div>
+          <div class="propuesta-item-desc" data-i18n="propuesta.04.desc">Años de fotografía aplicados al producto digital. Sé lo que se ve bien y por qué.</div>
         </div>
       </div>
     </div>
@@ -314,13 +320,13 @@
 <section class="casos" id="casos">
   <div class="casos-header reveal">
     <div>
-      <div class="section-label">Casos de estudio</div>
-      <h2 class="casos-titulo">
+      <div class="section-label" data-i18n="casos.label">Casos de estudio</div>
+      <h2 class="casos-titulo" data-i18n="casos.titulo">
         Ecosistemas<br>
         <span>completos.</span>
       </h2>
     </div>
-    <p class="casos-desc">No vendo servicios sueltos — armo el ecosistema digital completo para cada cliente. Web, identidad, fotografía y automatización bajo una sola visión.</p>
+    <p class="casos-desc" data-i18n="casos.desc">No vendo servicios sueltos — armo el ecosistema digital completo para cada cliente. Web, identidad, fotografía y automatización bajo una sola visión.</p>
   </div>
 
   <div class="casos-grid">
@@ -328,13 +334,13 @@
     <!-- 1: Gualicho — span 7, row 1 -->
     <div class="caso-card reveal">
       <div class="caso-thumb">
-        <span class="caso-industry">Cervecería</span>
+        <span class="caso-industry" data-i18n="caso.001.industry">Cervecería</span>
         <img src="img/proyectos/gualichobeer.png" alt="Gualicho Beer" class="img--top">
       </div>
       <div class="caso-info">
         <div class="caso-num">001</div>
         <div class="caso-nombre">Gualicho Beer</div>
-        <ul class="caso-ecosistema">
+        <ul class="caso-ecosistema" data-i18n="caso.001.eco">
           <li>Web institucional para cervecería artesanal</li>
           <li>Identidad digital y comunicación de marca</li>
           <li>Catálogo de productos y punto de contacto</li>
@@ -346,20 +352,20 @@
           <span class="tag">Branding</span>
           <span class="tag">Gastronomía</span>
         </div>
-        <a href="https://www.gualicho.beer/" class="caso-link" target="_blank" rel="noopener">Ver proyecto <span class="caso-link-arrow">↗</span></a>
+        <a href="https://www.gualicho.beer/" class="caso-link" target="_blank" rel="noopener"><span data-i18n="caso.link">Ver proyecto</span> <span class="caso-link-arrow">↗</span></a>
       </div>
     </div>
 
     <!-- 2: CGYRM — span 5, row 1 -->
     <div class="caso-card reveal">
       <div class="caso-thumb">
-        <span class="caso-industry">Estudios profesionales</span>
+        <span class="caso-industry" data-i18n="caso.002.industry">Estudios profesionales</span>
         <img src="img/proyectos/cyornm.png" alt="CGYRM Jurídico">
       </div>
       <div class="caso-info">
         <div class="caso-num">002</div>
         <div class="caso-nombre">CyOryNM Estudio Jurídico</div>
-        <ul class="caso-ecosistema">
+        <ul class="caso-ecosistema" data-i18n="caso.002.eco">
           <li>Plataforma SaaS con gestión de casos</li>
           <li>Panel administrativo completo</li>
           <li>Sesión de fotos para la web</li>
@@ -370,23 +376,23 @@
           <span class="tag">Supabase</span>
           <span class="tag">SaaS</span>
         </div>
-        <a href="#" class="caso-link">Ver proyecto <span class="caso-link-arrow">↗</span></a>
+        <a href="#" class="caso-link"><span data-i18n="caso.link">Ver proyecto</span> <span class="caso-link-arrow">↗</span></a>
       </div>
     </div>
 
     <!-- 3: getdishub — span 4, rows 2-3 -->
     <div class="caso-card reveal">
       <div class="caso-thumb caso-thumb--loading">
-        <span class="caso-industry">Startups</span>
+        <span class="caso-industry" data-i18n="caso.003.industry">Startups</span>
         <div class="thumb-loading">
-          <span class="thumb-loading-label">Captura próximamente</span>
+          <span class="thumb-loading-label" data-i18n="caso.003.loading">Captura próximamente</span>
           <div class="thumb-loading-bar"><div class="thumb-loading-progress"></div></div>
         </div>
       </div>
       <div class="caso-info">
         <div class="caso-num">003</div>
         <div class="caso-nombre">getdishub.app</div>
-        <ul class="caso-ecosistema">
+        <ul class="caso-ecosistema" data-i18n="caso.003.eco">
           <li>Landing de conversión + plataforma</li>
           <li>Integración de pagos Stripe</li>
           <li>Dashboard de métricas</li>
@@ -396,20 +402,20 @@
           <span class="tag">Python</span>
           <span class="tag">Stripe</span>
         </div>
-        <a href="https://getdishub.app" class="caso-link" target="_blank" rel="noopener">Ver proyecto <span class="caso-link-arrow">↗</span></a>
+        <a href="https://getdishub.app" class="caso-link" target="_blank" rel="noopener"><span data-i18n="caso.link">Ver proyecto</span> <span class="caso-link-arrow">↗</span></a>
       </div>
     </div>
 
     <!-- 4: insertcoin — span 8, row 2 -->
     <div class="caso-card reveal">
       <div class="caso-thumb">
-        <span class="caso-industry">Entretenimiento</span>
+        <span class="caso-industry" data-i18n="caso.004.industry">Entretenimiento</span>
         <img src="img/proyectos/insertcoin.png" alt="Insert Coin" class="img--top">
       </div>
       <div class="caso-info">
         <div class="caso-num">004</div>
         <div class="caso-nombre">Insert Coin</div>
-        <ul class="caso-ecosistema">
+        <ul class="caso-ecosistema" data-i18n="caso.004.eco">
           <li>Web para sala de arcade y entretenimiento</li>
           <li>Catálogo de máquinas y reservas online</li>
           <li>Blog de cultura gamer y novedades</li>
@@ -420,20 +426,20 @@
           <span class="tag">Vite</span>
           <span class="tag">Supabase</span>
         </div>
-        <a href="#" class="caso-link">Ver proyecto <span class="caso-link-arrow">↗</span></a>
+        <a href="#" class="caso-link"><span data-i18n="caso.link">Ver proyecto</span> <span class="caso-link-arrow">↗</span></a>
       </div>
     </div>
 
     <!-- 5: Olazabal — span 5, row 3 -->
     <div class="caso-card reveal">
       <div class="caso-thumb">
-        <span class="caso-industry">Gastronomía</span>
+        <span class="caso-industry" data-i18n="caso.005.industry">Gastronomía</span>
         <img src="img/proyectos/olazabal.png" alt="Olazabal Café">
       </div>
       <div class="caso-info">
         <div class="caso-num">005</div>
         <div class="caso-nombre">Olazabal Café</div>
-        <ul class="caso-ecosistema">
+        <ul class="caso-ecosistema" data-i18n="caso.005.eco">
           <li>Web completa con menú y e-commerce</li>
           <li>Sistema de pedidos online</li>
           <li>Sesión fotográfica de productos y espacio</li>
@@ -445,20 +451,20 @@
           <span class="tag">Supabase</span>
           <span class="tag">Fotografía</span>
         </div>
-        <a href="https://olazabal.ar" class="caso-link" target="_blank" rel="noopener">Ver proyecto <span class="caso-link-arrow">↗</span></a>
+        <a href="https://olazabal.ar" class="caso-link" target="_blank" rel="noopener"><span data-i18n="caso.link">Ver proyecto</span> <span class="caso-link-arrow">↗</span></a>
       </div>
     </div>
 
     <!-- 6: Siderplac — span 3, row 3 -->
     <div class="caso-card reveal">
       <div class="caso-thumb">
-        <span class="caso-industry">SaaS / Construcción</span>
+        <span class="caso-industry" data-i18n="caso.006.industry">SaaS / Construcción</span>
         <img src="img/proyectos/siderplac.png" alt="Siderplac" class="img--top">
       </div>
       <div class="caso-info">
         <div class="caso-num">006</div>
         <div class="caso-nombre">Siderplac</div>
-        <ul class="caso-ecosistema">
+        <ul class="caso-ecosistema" data-i18n="caso.006.eco">
           <li>App de cotización de materiales para construcción en seco</li>
           <li>Cálculo automático por tipo y dimensión de obra</li>
           <li>Deploy en Vercel con actualizaciones en tiempo real</li>
@@ -469,20 +475,20 @@
           <span class="tag">Supabase</span>
           <span class="tag">Vercel</span>
         </div>
-        <a href="https://app.siderplac.com.ar/" class="caso-link" target="_blank" rel="noopener">Ver proyecto <span class="caso-link-arrow">↗</span></a>
+        <a href="https://app.siderplac.com.ar/" class="caso-link" target="_blank" rel="noopener"><span data-i18n="caso.link">Ver proyecto</span> <span class="caso-link-arrow">↗</span></a>
       </div>
     </div>
 
     <!-- 7: Lugo — span 4, row 3 (col 1 explícita) -->
     <div class="caso-card reveal">
       <div class="caso-thumb">
-        <span class="caso-industry">Gastronomía</span>
+        <span class="caso-industry" data-i18n="caso.008.industry">Gastronomía</span>
         <img src="img/proyectos/lugo.png" alt="Lugo">
       </div>
       <div class="caso-info">
         <div class="caso-num">008</div>
         <div class="caso-nombre">Lugo</div>
-        <ul class="caso-ecosistema">
+        <ul class="caso-ecosistema" data-i18n="caso.008.eco">
           <li>Landing pre-lanzamiento con countdown activo</li>
           <li>Sistema de pedidos online</li>
           <li>Captación de emails y lista de espera</li>
@@ -493,20 +499,20 @@
           <span class="tag">Vite</span>
           <span class="tag">Tailwind</span>
         </div>
-        <a href="https://lugo.ar" class="caso-link" target="_blank" rel="noopener">Ver proyecto <span class="caso-link-arrow">↗</span></a>
+        <a href="https://lugo.ar" class="caso-link" target="_blank" rel="noopener"><span data-i18n="caso.link">Ver proyecto</span> <span class="caso-link-arrow">↗</span></a>
       </div>
     </div>
 
     <!-- 8: anotame — span 12, row 4 -->
     <div class="caso-card reveal">
       <div class="caso-thumb">
-        <span class="caso-industry">Producto personal</span>
+        <span class="caso-industry" data-i18n="caso.007.industry">Producto personal</span>
         <img src="img/proyectos/anotamexyz.png" alt="anotame.xyz" class="img--top">
       </div>
       <div class="caso-info">
         <div class="caso-num">007</div>
         <div class="caso-nombre">anotame.xyz</div>
-        <ul class="caso-ecosistema">
+        <ul class="caso-ecosistema" data-i18n="caso.007.eco">
           <li>Anotador digital para Truco, Chinchón, Escoba y Generala</li>
           <li>Diseño brutalista — tipografía pesada, grillas rotas, sin ornamentos</li>
           <li>Producto propio, open source</li>
@@ -517,7 +523,7 @@
           <span class="tag">Brutalismo</span>
           <span class="tag">Producto propio</span>
         </div>
-        <a href="https://anotame.xyz" class="caso-link" target="_blank" rel="noopener">Ver proyecto <span class="caso-link-arrow">↗</span></a>
+        <a href="https://anotame.xyz" class="caso-link" target="_blank" rel="noopener"><span data-i18n="caso.link">Ver proyecto</span> <span class="caso-link-arrow">↗</span></a>
       </div>
     </div>
 
@@ -528,13 +534,13 @@
 <section class="galeria-section" id="galeria">
   <div class="galeria-intro reveal">
     <div>
-      <div class="section-label">Ojo visual</div>
-      <h2 class="galeria-titulo">
+      <div class="section-label" data-i18n="galeria.label">Ojo visual</div>
+      <h2 class="galeria-titulo" data-i18n="galeria.titulo">
         Foto<br>
         <span>grafía</span>
       </h2>
     </div>
-    <p class="galeria-desc">
+    <p class="galeria-desc" data-i18n="galeria.desc">
       La misma sensibilidad que aplico a la fotografía callejera, gastronómica y documental la traigo al producto digital. El ojo que distingue una buena composición también distingue una buena interfaz.
     </p>
   </div>
@@ -589,7 +595,7 @@
 
 <!-- STACK -->
 <section class="stack-section" id="stack">
-  <div class="section-label">Stack técnico</div>
+  <div class="section-label" data-i18n="stack.label">Stack técnico</div>
   <div class="stack-grid reveal-grid">
     <div class="stack-item"><i class="stack-icon devicon-react-original"></i><span class="stack-name">React</span></div>
     <div class="stack-item"><i class="stack-icon devicon-vitejs-plain"></i><span class="stack-name">Vite</span></div>
@@ -597,17 +603,15 @@
     <div class="stack-item"><i class="stack-icon devicon-python-plain"></i><span class="stack-name">Python</span></div>
     <div class="stack-item"><i class="stack-icon devicon-supabase-plain"></i><span class="stack-name">Supabase</span></div>
     <div class="stack-item"><i class="stack-icon devicon-mongodb-plain"></i><span class="stack-name">MongoDB</span></div>
-    <div class="stack-item"><i class="stack-icon devicon-mysql-plain"></i><span class="stack-name">MySQL</span></div>
     <div class="stack-item">
       <svg class="stack-icon stack-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="5" r="2"/><circle cx="5" cy="19" r="2"/><circle cx="19" cy="19" r="2"/><path d="M12 7v4M12 11l-5 6M12 11l5 6"/></svg>
       <span class="stack-name">n8n</span>
     </div>
     <div class="stack-item">
-      <svg class="stack-icon stack-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a4 4 0 0 1 4 4c0 1.5-.8 2.8-2 3.5V11h1a2 2 0 0 1 2 2v1h1a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1v-3a1 1 0 0 1 1-1h1v-1a2 2 0 0 1 2-2h1V9.5A4 4 0 0 1 12 2z"/></svg>
+      <svg class="stack-icon stack-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9.5 2A2.5 2.5 0 0 1 12 4.5v15a2.5 2.5 0 0 1-4.96-.46 2.5 2.5 0 0 1-2.96-3.08 3 3 0 0 1-.34-5.58 2.5 2.5 0 0 1 1.32-4.24 2.5 2.5 0 0 1 1.98-3A2.5 2.5 0 0 1 9.5 2Z"/><path d="M14.5 2A2.5 2.5 0 0 0 12 4.5v15a2.5 2.5 0 0 0 4.96-.46 2.5 2.5 0 0 0 2.96-3.08 3 3 0 0 0 .34-5.58 2.5 2.5 0 0 0-1.32-4.24 2.5 2.5 0 0 0-1.98-3A2.5 2.5 0 0 0 14.5 2Z"/></svg>
       <span class="stack-name">AI / LLMs</span>
     </div>
     <div class="stack-item"><i class="stack-icon devicon-docker-plain"></i><span class="stack-name">Docker</span></div>
-    <div class="stack-item"><i class="stack-icon devicon-amazonwebservices-plain"></i><span class="stack-name">AWS</span></div>
   </div>
 </section>
 
@@ -615,13 +619,13 @@
 <div class="contacto" id="contacto">
   <div class="contacto-left">
     <div>
-      <div class="section-label">Siguiente paso</div>
-      <h2 class="contacto-titulo">
+      <div class="section-label" data-i18n="contacto.label">Siguiente paso</div>
+      <h2 class="contacto-titulo" data-i18n="contacto.titulo">
         Hable<br>
         <span>mos.</span>
       </h2>
     </div>
-    <div class="contacto-meta">
+    <div class="contacto-meta" data-i18n="contacto.meta">
       Buenos Aires, Argentina<br>
       Disponible para proyectos remotos<br>
       y presenciales · <span id="contact-year">2025</span>
@@ -636,10 +640,10 @@
       </div>
       <span class="arrow">↗</span>
     </a>
-    <a href="https://wa.me/5491168980563" class="contacto-link">
+    <a href="https://wa.me/5491168980563" class="contacto-link" target="_blank" rel="noopener noreferrer">
       <div>
         <div class="contacto-link-label">WhatsApp</div>
-        <div>+54 9 11 6889-0563</div>
+        <div>+54 9 11 6898-0563</div>
       </div>
       <span class="arrow">↗</span>
     </a>
@@ -652,7 +656,7 @@
       <span class="arrow">↗</span>
     </a>
     -->
-    <a href="https://instagram.com" class="contacto-link">
+    <a href="https://instagram.com/cufa.dev" class="contacto-link" target="_blank" rel="noopener noreferrer">
       <div>
         <div class="contacto-link-label">Instagram</div>
         <div>@cufa.dev</div>
@@ -665,12 +669,12 @@
 <!-- FOOTER -->
 <footer>
   <span class="footer-logo">CUFA.</span>
-  <span class="footer-copy">© <span id="footer-year">2025</span> CUFA · Hecho con 🧉 en Buenos Aires · <span style="font-family:var(--mono);opacity:0.4;font-size:10px;">v2.0</span></span>
+  <span class="footer-copy" data-i18n="footer.copy">© <span id="footer-year">2025</span> CUFA · Hecho con 🧉 en Buenos Aires · <span style="font-family:var(--mono);opacity:0.4;font-size:10px;">v2.1.0</span></span>
   <ul class="footer-links">
-    <li><a href="#casos">Casos</a></li>
-    <li><a href="#galeria">Galería</a></li>
-    <li><a href="#stack">Stack</a></li>
-    <li><a href="#contacto">Contacto</a></li>
+    <li><a href="#casos" data-i18n="nav.casos">Casos</a></li>
+    <li><a href="#galeria" data-i18n="nav.galeria">Galería</a></li>
+    <li><a href="#stack" data-i18n="nav.stack">Stack</a></li>
+    <li><a href="#contacto" data-i18n="contacto.label.footer">Contacto</a></li>
   </ul>
 </footer>
 
