@@ -2,18 +2,51 @@
 const loader = document.getElementById('loader');
 const loaderPct = document.getElementById('loaderPct');
 let pct = 0;
-const pctInterval = setInterval(() => {
-  pct += Math.floor(Math.random() * 12) + 3;
-  if (pct >= 100) {
+
+function tickLoader() {
+  const r = Math.random();
+  let delta, delay;
+
+  if (r < 0.07) {
+    // retroceso brusco
+    delta = -(Math.floor(Math.random() * 6) + 2);
+    delay = Math.floor(Math.random() * 150) + 80;
+  } else if (r < 0.22) {
+    // congelado
+    delta = 0;
+    delay = Math.floor(Math.random() * 700) + 350;
+  } else if (r < 0.38) {
+    // salto rápido
+    delta = Math.floor(Math.random() * 9) + 6;
+    delay = Math.floor(Math.random() * 50) + 20;
+  } else {
+    // avance lento normal
+    delta = Math.floor(Math.random() * 3) + 1;
+    delay = Math.floor(Math.random() * 220) + 100;
+  }
+
+  pct = Math.max(0, Math.min(99, pct + delta));
+  loaderPct.textContent = String(pct).padStart(3, '0');
+  setTimeout(tickLoader, delay);
+}
+
+const MIN_LOADER_MS = 2500;
+const loaderStart = Date.now();
+
+window.addEventListener('load', () => {
+  const elapsed = Date.now() - loaderStart;
+  const wait = Math.max(0, MIN_LOADER_MS - elapsed);
+  setTimeout(() => {
     pct = 100;
-    clearInterval(pctInterval);
+    loaderPct.textContent = '100';
     setTimeout(() => {
       loader.classList.add('hidden');
       document.querySelector('.hero-content').classList.add('hero-loaded');
-    }, 300);
-  }
-  loaderPct.textContent = String(pct).padStart(3, '0');
-}, 60);
+    }, 400);
+  }, wait);
+});
+
+tickLoader();
 
 /* ── PARTICLES ── */
 const canvas = document.getElementById('particles');
