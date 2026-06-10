@@ -419,6 +419,16 @@ section { padding: 6rem 3rem; }
   line-height: 1.6;
 }
 
+.propuesta-tagline {
+  display: inline-block;
+  margin-top: 0.6rem;
+  font-family: var(--mono);
+  font-size: 9px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--orange-dim);
+}
+
 /* Casos de estudio */
 .casos { background: var(--bg); }
 
