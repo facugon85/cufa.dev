@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Galería — CUFA</title>
+<meta name="description" content="Galería fotográfica de Facundo González (CUFA). Fotografía callejera, gastronómica y documental desde Buenos Aires.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://www.cufagon.xyz/galeria.html">
+<meta name="theme-color" content="#ff4d00">
+<link rel="icon" type="image/png" href="/img/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&family=Bebas+Neue&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --bg: #0a0a0a;
+  --surface: #111111;
+  --surface2: #1a1a1a;
+  --orange: #ff4d00;
+  --orange-dim: #cc3d00;
+  --text: #f0ede8;
+  --text-muted: #888880;
+  --text-dim: #444440;
+  --border: rgba(255,255,255,0.07);
+  --mono: 'Space Mono', monospace;
+  --display: 'Bebas Neue', sans-serif;
+  --body: 'DM Sans', sans-serif;
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--body);
+  font-size: 15px;
+  line-height: 1.6;
+  overflow-x: hidden;
+  cursor: none;
+  min-height: 100vh;
+}
+
+.cursor {
+  position: fixed;
+  width: 10px; height: 10px;
+  background: var(--orange);
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 9999;
+  transform: translate(-50%, -50%);
+  transition: transform 0.1s, width 0.2s, height 0.2s, background 0.2s;
+}
+.cursor-ring {
+  position: fixed;
+  width: 36px; height: 36px;
+  border: 1px solid rgba(255,77,0,0.5);
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 9998;
+  transform: translate(-50%, -50%);
+  transition: transform 0.15s ease-out, width 0.3s, height 0.3s;
+}
+
+nav {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5rem 3rem;
+  background: rgba(10,10,10,0.85);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--border);
+}
+
+.nav-logo {
+  font-family: var(--display);
+  font-size: 1.4rem;
+  letter-spacing: 0.05em;
+  color: var(--text);
+  text-decoration: none;
+}
+.nav-logo span { color: var(--orange); }
+
+.nav-back {
+  font-family: var(--mono);
+  font-size: 10px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  border: 1px solid var(--border);
+  padding: 0.7rem 1.4rem;
+  transition: border-color 0.2s, color 0.2s;
+}
+.nav-back:hover { border-color: var(--orange); color: var(--orange); }
+
+.page-wrap {
+  padding: 7rem 3rem 5rem;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.page-header {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  margin-bottom: 4rem;
+  align-items: end;
+}
+
+.section-label {
+  font-family: var(--mono);
+  font-size: 9px;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: var(--orange);
+  margin-bottom: 1rem;
+}
+
+.page-titulo {
+  font-family: var(--display);
+  font-size: clamp(3.5rem, 7vw, 7rem);
+  line-height: 0.95;
+  color: var(--text);
+}
+.page-titulo span { color: var(--orange); display: block; }
+
+.page-desc {
+  font-size: 14px;
+  color: var(--text-muted);
+  line-height: 1.8;
+  max-width: 400px;
+}
+
+.page-meta {
+  font-family: var(--mono);
+  font-size: 9px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--text-dim);
+  margin-top: 1.5rem;
+}
+
+/* Grid masonry-style */
+.full-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 3px;
+}
+
+.grid-item {
+  overflow: hidden;
+  position: relative;
+  background: var(--surface2);
+}
+
+.grid-item.tall { grid-row: span 2; }
+.grid-item.wide { grid-column: span 2; }
+
+.grid-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: grayscale(20%);
+  transition: transform 0.6s ease, filter 0.4s ease;
+  display: block;
+  min-height: 200px;
+}
+
+.grid-item:hover img {
+  transform: scale(1.05);
+  filter: grayscale(0%);
+}
+
+.grid-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(255,77,0,0);
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  padding: 1rem 1.2rem;
+  transition: background 0.3s;
+}
+
+.grid-item:hover .grid-overlay {
+  background: rgba(255,77,0,0.1);
+}
+
+.grid-num {
+  font-family: var(--mono);
+  font-size: 10px;
+  color: rgba(255,255,255,0);
+  transition: color 0.3s;
+}
+
+.grid-item:hover .grid-num { color: rgba(255,255,255,0.6); }
+
+footer {
+  border-top: 1px solid var(--border);
+  margin-top: 4rem;
+  padding: 2.5rem 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.footer-copy {
+  font-family: var(--mono);
+  font-size: 9px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--text-dim);
+}
+
+.footer-back {
+  font-family: var(--mono);
+  font-size: 9px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--text-dim);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+.footer-back:hover { color: var(--orange); }
+
+@media (max-width: 900px) {
+  nav { padding: 1.2rem 1.5rem; }
+  .page-wrap { padding: 6rem 1.5rem 4rem; }
+  .page-header { grid-template-columns: 1fr; gap: 1.5rem; }
+  .full-grid { grid-template-columns: repeat(2, 1fr); }
+  .grid-item.tall { grid-row: span 1; }
+  .grid-item.wide { grid-column: span 1; }
+  footer { padding: 2rem 1.5rem; }
+}
+
+@media (max-width: 480px) {
+  .full-grid { grid-template-columns: 1fr; }
+}
+</style>
+</head>
+<body>
+
+<div class="cursor" id="cursor"></div>
+<div class="cursor-ring" id="cursorRing"></div>
+
+<nav>
+  <a href="/" class="nav-logo">CUFA<span>.</span></a>
+  <a href="/#galeria" class="nav-back">
+    <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M12 5l-7 7 7 7"/></svg>
+    Volver
+  </a>
+</nav>
+
+<div class="page-wrap">
+
+  <div class="page-header">
+    <div>
+      <div class="section-label">Archivo visual</div>
+      <h1 class="page-titulo">
+        Gale<br>
+        <span>ría</span>
+      </h1>
+    </div>
+    <div>
+      <p class="page-desc">
+        Calle, gastronomía, documento. El mismo ojo que construye interfaces diseña encuadres. Una selección del archivo fotográfico.
+      </p>
+      <p class="page-meta">Buenos Aires · 2020 — 2025</p>
+    </div>
+  </div>
+
+  <div class="full-grid">
+
+    <div class="grid-item tall">
+      <img src="img/fotos/photo33.webp" alt="Fotografía 033" loading="lazy">
+      <div class="grid-overlay"><span class="grid-num">033</span></div>
+    </div>
+
+    <div class="grid-item">
+      <img src="img/fotos/photo46.webp" alt="Fotografía 046" loading="lazy">
+      <div class="grid-overlay"><span class="grid-num">046</span></div>
+    </div>
+
+    <div class="grid-item">
+      <img src="img/fotos/photo4.webp" alt="Fotografía 004" loading="lazy">
+      <div class="grid-overlay"><span class="grid-num">004</span></div>
+    </div>
+
+    <div class="grid-item tall">
+      <img src="img/fotos/photo67.webp" alt="Fotografía 067" loading="lazy">
+      <div class="grid-overlay"><span class="grid-num">067</span></div>
+    </div>
+
+    <div class="grid-item">
+      <img src="img/fotos/photo50.webp" alt="Fotografía 050" loading="lazy">
+      <div class="grid-overlay"><span class="grid-num">050</span></div>
+    </div>
+
+    <div class="grid-item">
+      <img src="img/fotos/photo6.webp" alt="Fotografía 006" loading="lazy">
+      <div class="grid-overlay"><span class="grid-num">006</span></div>
+    </div>
+
+    <div class="grid-item wide">
+      <img src="img/fotos/photo74.webp" alt="Fotografía 074" loading="lazy">
+      <div class="grid-overlay"><span class="grid-num">074</span></div>
+    </div>
+
+    <div class="grid-item">
+      <img src="img/fotos/photo86.webp" alt="Fotografía 086" loading="lazy">
+      <div class="grid-overlay"><span class="grid-num">086</span></div>
+    </div>
+
+    <div class="grid-item">
+      <img src="img/fotos/photo89.webp" alt="Fotografía 089" loading="lazy">
+      <div class="grid-overlay"><span class="grid-num">089</span></div>
+    </div>
+
+    <div class="grid-item tall">
+      <img src="img/fotos/photo91.webp" alt="Fotografía 091" loading="lazy">
+      <div class="grid-overlay"><span class="grid-num">091</span></div>
+    </div>
+
+    <div class="grid-item">
+      <img src="img/fotos/photo92.webp" alt="Fotografía 092" loading="lazy">
+      <div class="grid-overlay"><span class="grid-num">092</span></div>
+    </div>
+
+    <div class="grid-item">
+      <img src="img/fotos/photo9.webp" alt="Fotografía 009" loading="lazy">
+      <div class="grid-overlay"><span class="grid-num">009</span></div>
+    </div>
+
+    <div class="grid-item">
+      <img src="img/fotos/_CSC1687.jpg" alt="Fotografía 1687" loading="lazy">
+      <div class="grid-overlay"><span class="grid-num">1687</span></div>
+    </div>
+
+  </div>
+
+</div>
+
+<footer>
+  <span class="footer-copy">© 2025 CUFA — Facundo González</span>
+  <a href="/" class="footer-back">← cufagon.xyz</a>
+</footer>
+
+<script>
+  const cursor = document.getElementById('cursor');
+  const ring = document.getElementById('cursorRing');
+  let mx = 0, my = 0, rx = 0, ry = 0;
+
+  document.addEventListener('mousemove', e => {
+    mx = e.clientX; my = e.clientY;
+    cursor.style.left = mx + 'px';
+    cursor.style.top = my + 'px';
+  });
+
+  (function animRing() {
+    rx += (mx - rx) * 0.12;
+    ry += (my - ry) * 0.12;
+    ring.style.left = rx + 'px';
+    ring.style.top = ry + 'px';
+    requestAnimationFrame(animRing);
+  })();
+
+  document.querySelectorAll('a, button').forEach(el => {
+    el.addEventListener('mouseenter', () => {
+      cursor.style.width = '18px';
+      cursor.style.height = '18px';
+    });
+    el.addEventListener('mouseleave', () => {
+      cursor.style.width = '10px';
+      cursor.style.height = '10px';
+    });
+  });
+</script>
+</body>
+</html>

@@ -1,8 +1,0 @@
-{
-  "permissions": {
-    "allow": [
-      "Bash(file /home/cufa/cufa/web/img/proyectos/*.png)",
-      "Bash(node --check /home/cufa/cufa/web/script.js)"
-    ]
-  }
-}

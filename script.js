@@ -223,21 +223,27 @@ const translations = {
     'casos.desc': 'No vendo servicios sueltos — armo el ecosistema digital completo para cada cliente. Web, identidad, fotografía y automatización bajo una sola visión.',
     'caso.001.industry': 'Cervecería',
     'caso.002.industry': 'Estudios profesionales',
-    'caso.003.industry': 'Startups',
+    'caso.003.industry': 'Gastronomía',
     'caso.003.loading': 'Captura próximamente',
-    'caso.004.industry': 'Entretenimiento',
-    'caso.005.industry': 'Gastronomía',
-    'caso.006.industry': 'SaaS / Construcción',
-    'caso.007.industry': 'Producto personal',
-    'caso.008.industry': 'Gastronomía',
+    'caso.004.industry': 'SaaS / Deportes',
+    'caso.004.loading': 'Captura próximamente',
+    'caso.005.industry': 'Startups',
+    'caso.005.loading': 'Captura próximamente',
+    'caso.006.industry': 'Entretenimiento',
+    'caso.007.industry': 'Gastronomía',
+    'caso.008.industry': 'SaaS / Construcción',
+    'caso.009.industry': 'Producto personal',
+    'caso.010.industry': 'Gastronomía',
     'caso.001.eco': '<li>Web institucional para cervecería artesanal</li><li>Identidad digital y comunicación de marca</li><li>Catálogo de productos y punto de contacto</li><li>Sistema de alquiler de choperas para eventos</li><li>Compra de birras sin hacer colas vía QR</li>',
     'caso.002.eco': '<li>Plataforma SaaS con gestión de casos</li><li>Panel administrativo completo</li><li>Sesión de fotos para la web</li>',
-    'caso.003.eco': '<li>Landing de conversión + plataforma</li><li>Integración de pagos Stripe</li><li>Dashboard de métricas</li>',
-    'caso.004.eco': '<li>Web para sala de arcade y entretenimiento</li><li>Catálogo de máquinas y reservas online</li><li>Blog de cultura gamer y novedades</li><li>Identidad digital y producción visual</li>',
-    'caso.005.eco': '<li>Web completa con menú y e-commerce</li><li>Sistema de pedidos online</li><li>Sesión fotográfica de productos y espacio</li><li>Identidad digital y redes sociales</li>',
-    'caso.006.eco': '<li>App de cotización de materiales para construcción en seco</li><li>Cálculo automático por tipo y dimensión de obra</li><li>Deploy en Vercel con actualizaciones en tiempo real</li>',
-    'caso.007.eco': '<li>Anotador digital para Truco, Chinchón, Escoba y Generala</li><li>Diseño brutalista — tipografía pesada, grillas rotas, sin ornamentos</li><li>Producto propio, open source</li>',
-    'caso.008.eco': '<li>Landing pre-lanzamiento con countdown activo</li><li>Sistema de pedidos online</li><li>Captación de emails y lista de espera</li><li>Identidad visual para panadería artesanal BA</li>',
+    'caso.003.eco': '<li>Web presence para restaurante</li><li>Menú digital y punto de contacto</li><li>Identidad digital y comunicación de marca</li>',
+    'caso.004.eco': '<li>Plataforma SaaS de pronósticos para el mundial</li><li>Gestión de ligas privadas y grupos</li><li>Ranking en tiempo real y sistema de puntos</li><li>Integración de pagos y suscripciones</li>',
+    'caso.005.eco': '<li>Landing de conversión + plataforma</li><li>Integración de pagos Stripe</li><li>Dashboard de métricas</li>',
+    'caso.006.eco': '<li>Web para sala de arcade y entretenimiento</li><li>Catálogo de máquinas y reservas online</li><li>Blog de cultura gamer y novedades</li><li>Identidad digital y producción visual</li>',
+    'caso.007.eco': '<li>Web completa con menú y e-commerce</li><li>Sistema de pedidos online</li><li>Sesión fotográfica de productos y espacio</li><li>Identidad digital y redes sociales</li>',
+    'caso.008.eco': '<li>App de cotización de materiales para construcción en seco</li><li>Cálculo automático por tipo y dimensión de obra</li><li>Deploy en Vercel con actualizaciones en tiempo real</li>',
+    'caso.009.eco': '<li>Anotador digital para Truco, Chinchón, Escoba y Generala</li><li>Diseño brutalista — tipografía pesada, grillas rotas, sin ornamentos</li><li>Producto propio, open source</li>',
+    'caso.010.eco': '<li>Landing pre-lanzamiento con countdown activo</li><li>Sistema de pedidos online</li><li>Captación de emails y lista de espera</li><li>Identidad visual para panadería artesanal BA</li>',
     'caso.link': 'Ver proyecto',
     'galeria.label': 'Ojo visual',
     'galeria.titulo': 'Foto<br><span>grafía</span>',
@@ -277,21 +283,27 @@ const translations = {
     'casos.desc': "I don't sell isolated services — I build the complete digital ecosystem for each client. Web, identity, photography, and automation under a single vision.",
     'caso.001.industry': 'Brewery',
     'caso.002.industry': 'Professional Offices',
-    'caso.003.industry': 'Startups',
+    'caso.003.industry': 'Gastronomy',
     'caso.003.loading': 'Screenshot coming soon',
-    'caso.004.industry': 'Entertainment',
-    'caso.005.industry': 'Gastronomy',
-    'caso.006.industry': 'SaaS / Construction',
-    'caso.007.industry': 'Personal Product',
-    'caso.008.industry': 'Gastronomy',
+    'caso.004.industry': 'SaaS / Sports',
+    'caso.004.loading': 'Screenshot coming soon',
+    'caso.005.industry': 'Startups',
+    'caso.005.loading': 'Screenshot coming soon',
+    'caso.006.industry': 'Entertainment',
+    'caso.007.industry': 'Gastronomy',
+    'caso.008.industry': 'SaaS / Construction',
+    'caso.009.industry': 'Personal Product',
+    'caso.010.industry': 'Gastronomy',
     'caso.001.eco': '<li>Institutional website for craft brewery</li><li>Digital identity and brand communication</li><li>Product catalog and contact point</li><li>Beer tap rental system for events</li><li>Queue-free beer purchase via QR</li>',
     'caso.002.eco': '<li>SaaS platform with case management</li><li>Complete admin panel</li><li>Photo session for the website</li>',
-    'caso.003.eco': '<li>Conversion landing + platform</li><li>Stripe payment integration</li><li>Metrics dashboard</li>',
-    'caso.004.eco': '<li>Website for arcade and entertainment venue</li><li>Machine catalog and online reservations</li><li>Gamer culture blog and news</li><li>Digital identity and visual production</li>',
-    'caso.005.eco': '<li>Full website with menu and e-commerce</li><li>Online ordering system</li><li>Product and space photo session</li><li>Digital identity and social media</li>',
-    'caso.006.eco': '<li>Materials quoting app for dry construction</li><li>Automatic calculation by project type and dimensions</li><li>Vercel deploy with real-time updates</li>',
-    'caso.007.eco': '<li>Digital scorekeeper for Truco, Chinchón, Escoba and Generala</li><li>Brutalist design — heavy typography, broken grids, no ornaments</li><li>Own product, open source</li>',
-    'caso.008.eco': '<li>Pre-launch landing with active countdown</li><li>Online ordering system</li><li>Email capture and waitlist</li><li>Visual identity for BA artisan bakery</li>',
+    'caso.003.eco': '<li>Web presence for restaurant</li><li>Digital menu and contact point</li><li>Digital identity and brand communication</li>',
+    'caso.004.eco': '<li>SaaS platform for World Cup predictions</li><li>Private leagues and groups management</li><li>Real-time rankings and scoring system</li><li>Payment and subscription integration</li>',
+    'caso.005.eco': '<li>Conversion landing + platform</li><li>Stripe payment integration</li><li>Metrics dashboard</li>',
+    'caso.006.eco': '<li>Website for arcade and entertainment venue</li><li>Machine catalog and online reservations</li><li>Gamer culture blog and news</li><li>Digital identity and visual production</li>',
+    'caso.007.eco': '<li>Full website with menu and e-commerce</li><li>Online ordering system</li><li>Product and space photo session</li><li>Digital identity and social media</li>',
+    'caso.008.eco': '<li>Materials quoting app for dry construction</li><li>Automatic calculation by project type and dimensions</li><li>Vercel deploy with real-time updates</li>',
+    'caso.009.eco': '<li>Digital scorekeeper for Truco, Chinchón, Escoba and Generala</li><li>Brutalist design — heavy typography, broken grids, no ornaments</li><li>Own product, open source</li>',
+    'caso.010.eco': '<li>Pre-launch landing with active countdown</li><li>Online ordering system</li><li>Email capture and waitlist</li><li>Visual identity for BA artisan bakery</li>',
     'caso.link': 'View project',
     'galeria.label': 'Visual eye',
     'galeria.titulo': 'Photo<br><span>graphy</span>',
@@ -340,3 +352,21 @@ window.addEventListener('scroll', () => {
     heroScrollEl.style.pointerEvents = heroBottom < 100 ? 'none' : 'auto';
   }
 });
+
+/* ── GALERIA BTN GLITCH ── */
+const galBtn = document.querySelector('.btn-galeria-disabled');
+if (galBtn) {
+  galBtn.addEventListener('mouseenter', () => {
+    galBtn.classList.remove('emptying');
+    galBtn.classList.add('filling');
+  });
+  galBtn.addEventListener('mouseleave', () => {
+    galBtn.classList.remove('filling');
+    galBtn.classList.add('emptying');
+  });
+  galBtn.addEventListener('animationend', e => {
+    if (e.animationName === 'glitch-empty') {
+      galBtn.classList.remove('emptying');
+    }
+  });
+}
