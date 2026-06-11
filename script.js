@@ -370,3 +370,33 @@ if (galBtn) {
     }
   });
 }
+
+/* ── CASO VIDEO hover play/pause con loop suave ── */
+document.querySelectorAll('.caso-video').forEach(video => {
+  const card = video.closest('.caso-card');
+  if (!card) return;
+  const FADE_BEFORE = 0.6; // segundos antes del final para empezar fade out
+
+  card.addEventListener('mouseenter', () => video.play());
+  card.addEventListener('mouseleave', () => {
+    video.pause();
+    video.style.opacity = '';
+    video.currentTime = 0;
+  });
+
+  video.addEventListener('timeupdate', () => {
+    if (!video.duration) return;
+    const remaining = video.duration - video.currentTime;
+    if (remaining < FADE_BEFORE) {
+      video.style.opacity = Math.max(0, remaining / FADE_BEFORE);
+    }
+  });
+
+  video.addEventListener('ended', () => {
+    video.currentTime = 0;
+    video.play();
+    requestAnimationFrame(() => requestAnimationFrame(() => {
+      video.style.opacity = '1';
+    }));
+  });
+});
