@@ -1,5 +1,12 @@
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
+/* Scrollbar */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: var(--bg); }
+::-webkit-scrollbar-thumb { background: var(--orange); border-radius: 0; }
+::-webkit-scrollbar-thumb:hover { background: var(--orange-dim); }
+html { scrollbar-color: var(--orange) var(--bg); scrollbar-width: thin; }
+
 :root {
   --bg: #0a0a0a;
   --surface: #111111;
@@ -100,7 +107,12 @@ nav {
   background: var(--orange);
   padding: 0.6rem 1.2rem;
   text-decoration: none;
-  transition: background 0.2s;
+  transition: background 0.2s, min-width 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+  min-width: 130px;
+  text-align: center;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
 }
 .nav-cta:hover { background: var(--orange-dim); }
 
@@ -120,10 +132,18 @@ nav {
   text-transform: uppercase;
   padding: 5px 10px;
   cursor: pointer;
-  transition: border-color 0.2s, color 0.2s;
+  transition: border-color 0.2s, color 0.2s, transform 0.35s cubic-bezier(0.4, 0, 0.2, 1);
   display: flex;
   align-items: center;
   gap: 5px;
+  min-width: 62px;
+}
+
+#lang-label {
+  transition: opacity 0.3s ease;
+  display: inline-block;
+  min-width: 14px;
+  text-align: center;
 }
 .lang-toggle:hover { border-color: var(--orange); color: var(--orange); }
 
@@ -779,7 +799,7 @@ section { padding: 6rem 3rem; }
 }
 
 .btn-galeria::after {
-  content: 'Ver galería →';
+  content: attr(data-after);
   position: absolute;
   inset: 0;
   background: var(--orange);

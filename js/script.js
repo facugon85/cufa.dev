@@ -248,6 +248,7 @@ const translations = {
     'galeria.label': 'Ojo visual',
     'galeria.titulo': 'Foto<br><span>grafía</span>',
     'galeria.desc': 'La misma sensibilidad que aplico a la fotografía callejera, gastronómica y documental la traigo al producto digital. El ojo que distingue una buena composición también distingue una buena interfaz.',
+    'galeria.btn': 'Ver galería completa',
     'stack.label': 'Stack técnico',
     'contacto.label': 'Siguiente paso',
     'contacto.label.footer': 'Contacto',
@@ -308,6 +309,7 @@ const translations = {
     'galeria.label': 'Visual eye',
     'galeria.titulo': 'Photo<br><span>graphy</span>',
     'galeria.desc': 'The same sensibility I apply to street, gastronomic, and documentary photography I bring to the digital product. The eye that distinguishes a good composition also distinguishes a good interface.',
+    'galeria.btn': 'View full gallery',
     'stack.label': 'Technical stack',
     'contacto.label': 'Next step',
     'contacto.label.footer': 'Contact',
@@ -321,16 +323,26 @@ let currentLang = 'es';
 
 function applyLang(lang) {
   const els = document.querySelectorAll('[data-i18n]');
+  const langLabel = document.getElementById('lang-label');
+
   els.forEach(el => el.classList.add('lang-out'));
+  langLabel.style.opacity = '0';
+
   setTimeout(() => {
     els.forEach(el => {
       const val = translations[lang][el.dataset.i18n];
       if (val !== undefined) el.innerHTML = val;
     });
-    document.getElementById('lang-label').textContent = lang === 'es' ? 'EN' : 'ES';
+
+    const galBtn = document.querySelector('.btn-galeria');
+    if (galBtn) galBtn.setAttribute('data-after', lang === 'es' ? 'Ver galería →' : 'View gallery →');
+
+    langLabel.textContent = lang === 'es' ? 'EN' : 'ES';
     document.documentElement.lang = lang;
     currentLang = lang;
+
     els.forEach(el => el.classList.remove('lang-out'));
+    langLabel.style.opacity = '1';
   }, 350);
 }
 
