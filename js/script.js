@@ -354,7 +354,7 @@ window.addEventListener('scroll', () => {
 });
 
 /* ── GALERIA BTN GLITCH ── */
-const galBtn = document.querySelector('.btn-galeria-disabled');
+const galBtn = document.querySelector('.btn-galeria');
 if (galBtn) {
   galBtn.addEventListener('mouseenter', () => {
     galBtn.classList.remove('emptying');
