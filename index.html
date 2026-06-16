@@ -1,50 +1,55 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<!-- ═══════════════════════════════════════
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- ═══════════════════════════════════════
      PRIMARY META
 ════════════════════════════════════════ -->
-<title>CUFA — Desarrollador Web & SaaS Builder | Buenos Aires, Argentina</title>
-<meta name="description" content="Facundo González (CUFA) — Desarrollador Full Stack especializado en React, Python y soluciones SaaS escalables. Frontend de alto impacto, automatización con IA y producción visual. Buenos Aires, Argentina.">
-<meta name="keywords" content="desarrollador web argentina, freelance react developer, saas developer buenos aires, automatización web, frontend developer argentina, python developer, full stack developer, cufa dev">
-<meta name="author" content="Facundo González — CUFA">
-<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
-<meta name="theme-color" content="#ff4d00">
-<link rel="canonical" href="https://www.cufagon.xyz/">
+  <title>CUFA — Desarrollador Web & SaaS Builder | Buenos Aires, Argentina</title>
+  <meta name="description"
+    content="Facundo González (CUFA) — Desarrollador Full Stack especializado en React, Python y soluciones SaaS escalables. Frontend de alto impacto, automatización con IA y producción visual. Buenos Aires, Argentina.">
+  <meta name="keywords"
+    content="desarrollador web argentina, freelance react developer, saas developer buenos aires, automatización web, frontend developer argentina, python developer, full stack developer, cufa dev">
+  <meta name="author" content="Facundo González — CUFA">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+  <meta name="theme-color" content="#ff4d00">
+  <link rel="canonical" href="https://www.cufagon.xyz/">
 
-<!-- ═══════════════════════════════════════
+  <!-- ═══════════════════════════════════════
      OPEN GRAPH
 ════════════════════════════════════════ -->
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://www.cufagon.xyz/">
-<meta property="og:title" content="CUFA — Desarrollador Web & SaaS Builder">
-<meta property="og:description" content="Desarrollo web, automatización con IA y producción visual desde Buenos Aires. React, Python, Node.js. Soluciones digitales que funcionan y se ven bien.">
-<meta property="og:image" content="https://www.cufagon.xyz/img/og-image.png">
-<meta property="og:image:width" content="1200">
-<meta property="og:image:height" content="630">
-<meta property="og:image:alt" content="CUFA — Desarrollador Web y SaaS Builder, Buenos Aires">
-<meta property="og:locale" content="es_AR">
-<meta property="og:site_name" content="CUFA">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.cufagon.xyz/">
+  <meta property="og:title" content="CUFA — Desarrollador Web & SaaS Builder">
+  <meta property="og:description"
+    content="Desarrollo web, automatización con IA y producción visual desde Buenos Aires. React, Python, Node.js. Soluciones digitales que funcionan y se ven bien.">
+  <meta property="og:image" content="https://www.cufagon.xyz/img/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="CUFA — Desarrollador Web y SaaS Builder, Buenos Aires">
+  <meta property="og:locale" content="es_AR">
+  <meta property="og:site_name" content="CUFA">
 
-<!-- ═══════════════════════════════════════
+  <!-- ═══════════════════════════════════════
      TWITTER / X
 ════════════════════════════════════════ -->
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:url" content="https://www.cufagon.xyz/">
-<meta name="twitter:title" content="CUFA — Desarrollador Web & SaaS Builder">
-<meta name="twitter:description" content="Desarrollo web, automatización con IA y producción visual desde Buenos Aires. React, Python, Node.js.">
-<meta name="twitter:image" content="https://www.cufagon.xyz/img/og-image.png">
-<meta name="twitter:image:alt" content="CUFA — Desarrollador Web y SaaS Builder">
-<meta name="twitter:creator" content="@cufadev">
-<meta name="twitter:site" content="@cufadev">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:url" content="https://www.cufagon.xyz/">
+  <meta name="twitter:title" content="CUFA — Desarrollador Web & SaaS Builder">
+  <meta name="twitter:description"
+    content="Desarrollo web, automatización con IA y producción visual desde Buenos Aires. React, Python, Node.js.">
+  <meta name="twitter:image" content="https://www.cufagon.xyz/img/og-image.png">
+  <meta name="twitter:image:alt" content="CUFA — Desarrollador Web y SaaS Builder">
+  <meta name="twitter:creator" content="@cufadev">
+  <meta name="twitter:site" content="@cufadev">
 
-<!-- ═══════════════════════════════════════
+  <!-- ═══════════════════════════════════════
      SCHEMA.ORG JSON-LD
 ════════════════════════════════════════ -->
-<script type="application/ld+json">
+  <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@graph": [
@@ -153,557 +158,611 @@
 }
 </script>
 
-<!-- ═══════════════════════════════════════
+  <!-- ═══════════════════════════════════════
      FAVICONS
 ════════════════════════════════════════ -->
-<link rel="icon" type="image/png" href="img/logo128.png">
-<link rel="apple-touch-icon" sizes="180x180" href="img/logo128.png">
-<link rel="manifest" href="/site.webmanifest">
+  <link rel="icon" type="image/png" href="img/logo128.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="img/logo128.png">
+  <link rel="manifest" href="/site.webmanifest">
 
-<!-- ═══════════════════════════════════════
+  <!-- ═══════════════════════════════════════
      PERFORMANCE
 ════════════════════════════════════════ -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="dns-prefetch" href="https://fonts.googleapis.com">
-<link rel="dns-prefetch" href="https://cdn.jsdelivr.net">
-<link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&family=Bebas+Neue&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
-<link rel="stylesheet" href="css/style.css">
-<meta name="google-site-verification" content="Dm642CIudVKzp27GO3zfsTnZa1nJ9CFGrA1RHx7oJgs" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="dns-prefetch" href="https://fonts.googleapis.com">
+  <link rel="dns-prefetch" href="https://cdn.jsdelivr.net">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&family=Bebas+Neue&family=DM+Sans:wght@300;400;500&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <meta name="google-site-verification" content="Dm642CIudVKzp27GO3zfsTnZa1nJ9CFGrA1RHx7oJgs" />
 </head>
+
 <body>
 
-<!-- LOADER -->
-<div id="loader">
-  <div class="loader-logo" data-text="CUFA.">CUFA.</div>
-  <div class="loader-bar-wrap"><div class="loader-bar"></div></div>
-  <div class="loader-pct" id="loaderPct">000</div>
-</div>
-
-<canvas id="particles"></canvas>
-
-<div class="cursor" id="cursor"></div>
-<div class="cursor-ring" id="cursorRing"></div>
-
-<!-- NAV -->
-<nav>
-  <a href="#" class="nav-logo" data-text="CUFA.">CUFA.</a>
-  <ul class="nav-links">
-    <li><a href="#casos" data-i18n="nav.casos">Casos</a></li>
-    <li><a href="#galeria" data-i18n="nav.galeria">Galería</a></li>
-    <li><a href="#stack" data-i18n="nav.stack">Stack</a></li>
-  </ul>
-  <div class="nav-end">
-    <button class="lang-toggle" id="lang-toggle">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="13" height="13" aria-hidden="true"><path d="M12.87 15.07l-2.54-2.51.03-.03A17.52 17.52 0 0 0 14.07 6H17V4h-7V2H8v2H1v2h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11.76-2.04zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2l-4.5-12zm-2.62 7l1.62-4.33L19.12 17h-3.24z"/></svg>
-      <span id="lang-label">EN</span>
-    </button>
-    <a href="#contacto" class="nav-cta" data-i18n="nav.cta">Hablemos →</a>
-  </div>
-</nav>
-
-<!-- HERO -->
-<section class="hero">
-  <div class="hero-photo">
-    <img src="./img/cufa.jpg" alt="CUFA">
-    <div style="width:100%;height:100%;background:linear-gradient(135deg,#111 0%,#1a1a1a 100%);display:flex;align-items:center;justify-content:center;">
-      <span style="font-family:var(--mono);font-size:10px;letter-spacing:0.2em;color:var(--text-dim);text-transform:uppercase;">tu foto aquí</span>
+  <!-- LOADER -->
+  <div id="loader">
+    <div class="loader-logo" data-text="CUFA.">CUFA.</div>
+    <div class="loader-bar-wrap">
+      <div class="loader-bar"></div>
     </div>
+    <div class="loader-pct" id="loaderPct">000</div>
   </div>
 
-  <div class="hero-content">
-    <div class="hero-eyebrow" data-i18n="hero.eyebrow">Creador Digital</div>
+  <canvas id="particles"></canvas>
 
-    <h1 class="hero-name">
-      CU<span>FA.</span>
-    </h1>
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
 
-    <p class="hero-tagline" data-i18n="hero.tagline">
-      Desarrollo web · Automatización<br>
-      Producción visual · SaaS escalable<br>
-      Buenos Aires, Argentina
-    </p>
+  <!-- NAV -->
+  <nav>
+    <a href="#" class="nav-logo" data-text="CUFA.">CUFA.</a>
+    <ul class="nav-links">
+      <li><a href="#casos" data-i18n="nav.casos">Casos</a></li>
+      <li><a href="#galeria" data-i18n="nav.galeria">Galería</a></li>
+      <li><a href="#stack" data-i18n="nav.stack">Stack</a></li>
+    </ul>
+    <div class="nav-end">
+      <button class="lang-toggle" id="lang-toggle">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="13" height="13"
+          aria-hidden="true">
+          <path
+            d="M12.87 15.07l-2.54-2.51.03-.03A17.52 17.52 0 0 0 14.07 6H17V4h-7V2H8v2H1v2h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11.76-2.04zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2l-4.5-12zm-2.62 7l1.62-4.33L19.12 17h-3.24z" />
+        </svg>
+        <span id="lang-label">EN</span>
+      </button>
+      <a href="#contacto" class="nav-cta" data-i18n="nav.cta">Hablemos →</a>
+    </div>
+  </nav>
 
-    <div class="hero-meta">
-      <div class="hero-meta-item">
-        <span class="label" data-i18n="hero.hora">Hora</span>
-        <span id="clock">--:--:--</span>
-        <span class="dot"></span>
-      </div>
-      <div class="hero-meta-item">
-        <span class="label" data-i18n="hero.estado.label">Estado</span>
-        <span style="color:var(--orange);" data-i18n="hero.estado.value">2 Proyectos en desarrollo</span>
-      </div>
-      <div class="hero-meta-item">
-        <span class="label">Engine</span>
-        <span style="font-family:var(--mono);font-size:11px;">React · Python · Node.js</span>
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-photo">
+      <img src="./img/cufa.jpg" alt="CUFA">
+      <div
+        style="width:100%;height:100%;background:linear-gradient(135deg,#111 0%,#1a1a1a 100%);display:flex;align-items:center;justify-content:center;">
+        <span
+          style="font-family:var(--mono);font-size:10px;letter-spacing:0.2em;color:var(--text-dim);text-transform:uppercase;">tu
+          foto aquí</span>
       </div>
     </div>
 
-    <div class="hero-btns">
-      <a href="#proyectos" class="btn-primary" data-i18n="hero.btn.proyectos">Ver Proyectos ↓</a>
-      <a href="https://wa.me/5491168980563" class="btn-ghost" target="_blank" rel="noopener noreferrer">WhatsApp ↗</a>
+    <div class="hero-content">
+      <div class="hero-eyebrow" data-i18n="hero.eyebrow">Full Stack · SaaS Builder · UX/UI</div>
+
+      <h1 class="hero-name">
+        CU<span>FA.</span>
+      </h1>
+
+      <p class="hero-tagline" data-i18n="hero.tagline">
+        Código que funciona.<br>
+        Diseño que no da vergüenza.
+      </p>
+
+      <div class="hero-meta">
+        <div class="hero-meta-item">
+          <span class="label" data-i18n="hero.hora">Hora</span>
+          <span id="clock">--:--:--</span>
+          <span class="dot"></span>
+        </div>
+        <div class="hero-meta-item">
+          <span class="label" data-i18n="hero.estado.label">Estado</span>
+          <span style="color:var(--orange);" data-i18n="hero.estado.value">2 Proyectos en desarrollo</span>
+        </div>
+        <div class="hero-meta-item">
+          <span class="label">Engine</span>
+          <span style="font-family:var(--mono);font-size:11px;">React · Python · Node.js</span>
+        </div>
+      </div>
+
+      <div class="hero-btns">
+        <a href="#proyectos" class="btn-primary" data-i18n="hero.btn.proyectos">Ver Proyectos ↓</a>
+        <a href="https://wa.me/5491168980563" class="btn-ghost" target="_blank" rel="noopener noreferrer">WhatsApp ↗</a>
+      </div>
+    </div>
+
+    <div class="hero-scroll" data-i18n="hero.scroll">Scroll</div>
+  </section>
+
+  <!-- MARQUEE -->
+  <div class="marquee-strip">
+    <div class="marquee-track">
+      <span>Frontend Development</span><span class="accent">✦</span>
+      <span>SaaS & Plataformas</span><span class="accent">✦</span>
+      <span>Automatización IA</span><span class="accent">✦</span>
+      <span>Producción Visual</span><span class="accent">✦</span>
+      <span>Buenos Aires, ARG</span><span class="accent">✦</span>
+      <span>React · Python · Node.js</span><span class="accent">✦</span>
+      <span>Frontend Development</span><span class="accent">✦</span>
+      <span>SaaS & Plataformas</span><span class="accent">✦</span>
+      <span>Automatización IA</span><span class="accent">✦</span>
+      <span>Producción Visual</span><span class="accent">✦</span>
+      <span>Buenos Aires, ARG</span><span class="accent">✦</span>
+      <span>React · Python · Node.js</span><span class="accent">✦</span>
     </div>
   </div>
 
-  <div class="hero-scroll" data-i18n="hero.scroll">Scroll</div>
-</section>
+  <!-- PROPUESTA DE VALOR -->
+  <div class="propuesta">
+    <div class="propuesta-grid">
+      <div class="propuesta-texto">
+        <div class="section-label" data-i18n="propuesta.label">Propuesta de valor</div>
+        <h2 class="propuesta-titulo" data-i18n="propuesta.titulo">
+          Dev que<br>
+          <span>entiende</span>
+          el visual.
+        </h2>
+        <p class="propuesta-desc" data-i18n="propuesta.desc">
+          Empecé con BBS cuando nadie sabía qué era internet.<br>
+          Después vino la foto, el código, la IA.<br>
+          No busco la solución más elegante — busco la que funciona.<br>
+          Tengo proyectos en la cabeza que todavía no construí.<br>
+          Ideas que esperan el momento y el cliente correcto.
+        </p>
+      </div>
 
-<!-- MARQUEE -->
-<div class="marquee-strip">
-  <div class="marquee-track">
-    <span>Frontend Development</span><span class="accent">✦</span>
-    <span>SaaS & Plataformas</span><span class="accent">✦</span>
-    <span>Automatización IA</span><span class="accent">✦</span>
-    <span>Producción Visual</span><span class="accent">✦</span>
-    <span>Buenos Aires, ARG</span><span class="accent">✦</span>
-    <span>React · Python · Node.js</span><span class="accent">✦</span>
-    <span>Frontend Development</span><span class="accent">✦</span>
-    <span>SaaS & Plataformas</span><span class="accent">✦</span>
-    <span>Automatización IA</span><span class="accent">✦</span>
-    <span>Producción Visual</span><span class="accent">✦</span>
-    <span>Buenos Aires, ARG</span><span class="accent">✦</span>
-    <span>React · Python · Node.js</span><span class="accent">✦</span>
+      <div class="propuesta-items">
+        <div class="propuesta-item">
+          <span class="propuesta-num">01</span>
+          <div>
+            <div class="propuesta-item-title" data-i18n="propuesta.01.title">Frontend de alto impacto</div>
+            <div class="propuesta-item-desc" data-i18n="propuesta.01.desc">React, Vite, animaciones fluidas. Interfaces
+              que convierten y que los usuarios disfrutan usar.</div>
+          </div>
+        </div>
+        <div class="propuesta-item">
+          <span class="propuesta-num">02</span>
+          <div>
+            <div class="propuesta-item-title" data-i18n="propuesta.02.title">SaaS & sistemas complejos</div>
+            <div class="propuesta-item-desc" data-i18n="propuesta.02.desc">Plataformas multitenant, paneles admin,
+              integraciones API. Arquitecturas que escalan.</div>
+          </div>
+        </div>
+        <div class="propuesta-item">
+          <span class="propuesta-num">03</span>
+          <div>
+            <div class="propuesta-item-title" data-i18n="propuesta.03.title">Automatización inteligente</div>
+            <div class="propuesta-item-desc" data-i18n="propuesta.03.desc">Flujos con IA, integraciones con n8n, APIs.
+              Procesos que corren solos.</div>
+            <span class="propuesta-tagline">Humano primero. Potenciado por IA.</span>
+          </div>
+        </div>
+        <div class="propuesta-item">
+          <span class="propuesta-num">04</span>
+          <div>
+            <div class="propuesta-item-title" data-i18n="propuesta.04.title">Criterio visual de productor</div>
+            <div class="propuesta-item-desc" data-i18n="propuesta.04.desc">Años de fotografía aplicados al producto
+              digital. Sé lo que se ve bien y por qué.</div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
-</div>
 
-<!-- PROPUESTA DE VALOR -->
-<div class="propuesta">
-  <div class="propuesta-grid">
-    <div class="propuesta-texto">
-      <div class="section-label" data-i18n="propuesta.label">Propuesta de valor</div>
-      <h2 class="propuesta-titulo" data-i18n="propuesta.titulo">
-        Dev que<br>
-        <span>entiende</span>
-        el visual.
-      </h2>
-      <p class="propuesta-desc" data-i18n="propuesta.desc">
-        No solo construyo lo que me pedís — diseño soluciones digitales que funcionan y se ven bien. La combinación de criterio visual, capacidad técnica y automatización es lo que diferencia un proyecto promedio de uno memorable.
+  <!-- CASOS -->
+  <section class="casos" id="casos">
+    <div class="casos-header reveal">
+      <div>
+        <div class="section-label" data-i18n="casos.label">Casos de estudio</div>
+        <h2 class="casos-titulo" data-i18n="casos.titulo">
+          Ecosistemas<br>
+          <span>completos.</span>
+        </h2>
+      </div>
+      <p class="casos-desc" data-i18n="casos.desc">No vendo servicios sueltos — armo el ecosistema digital completo para
+        cada cliente. Web, identidad, fotografía y automatización bajo una sola visión.</p>
+    </div>
+
+    <div class="casos-grid">
+
+      <!-- 1: Gualicho — span 7, row 1 -->
+      <div class="caso-card reveal">
+        <div class="caso-thumb">
+          <span class="caso-industry" data-i18n="caso.001.industry">Cervecería</span>
+          <img src="img/proyectos/gualichobeer.png" alt="Gualicho Beer" class="img--top">
+        </div>
+        <div class="caso-info">
+          <div class="caso-num">001</div>
+          <div class="caso-nombre">Gualicho Beer</div>
+          <ul class="caso-ecosistema" data-i18n="caso.001.eco">
+            <li>Cervecería artesanal sin presencia digital ni sistema de ventas</li>
+            <li>Web + identidad + QR en punto de venta para pedidos sin cola</li>
+            <li>Sistema de alquiler de choperas integrado para eventos</li>
+          </ul>
+          <div class="caso-tags">
+            <span class="tag">Web</span>
+            <span class="tag">Branding</span>
+            <span class="tag">Sistema SaaS</span>
+          </div>
+          <a href="https://www.gualicho.beer/" class="caso-link" target="_blank" rel="noopener"><span
+              data-i18n="caso.link">Ver proyecto</span> <span class="caso-link-arrow">↗</span></a>
+        </div>
+      </div>
+
+      <!-- 2: CGYRM — span 5, row 1 -->
+      <div class="caso-card reveal">
+        <div class="caso-thumb">
+          <span class="caso-industry" data-i18n="caso.002.industry">Estudios profesionales</span>
+          <video class="img--top caso-video" src="videos/studiojuridico.webm" poster="img/proyectos/cyornm.png" muted
+            playsinline></video>
+        </div>
+        <div class="caso-info">
+          <div class="caso-num">002</div>
+          <div class="caso-nombre">CyOr & NM Estudio Jurídico</div>
+          <ul class="caso-ecosistema" data-i18n="caso.002.eco">
+            <li>Plataforma SaaS con gestión de casos</li>
+            <li>Panel administrativo completo</li>
+            <li>Sesión de fotos para la web</li>
+          </ul>
+          <div class="caso-tags">
+            <span class="tag">React</span>
+            <span class="tag">Node.js</span>
+            <span class="tag">Supabase</span>
+            <span class="tag">SaaS</span>
+          </div>
+          <a href="https://estudiojuridicocyorynm.com.ar/" class="caso-link" target="_blank" rel="noopener"><span
+              data-i18n="caso.link">Ver proyecto</span> <span class="caso-link-arrow">↗</span></a>
+        </div>
+      </div>
+
+      <!-- 3: Chebra — web institucional -->
+      <div class="caso-card reveal">
+        <div class="caso-thumb">
+          <span class="caso-industry" data-i18n="caso.003.industry">Gastronomía</span>
+          <video class="img--top caso-video" src="videos/chebra.webm" poster="img/proyectos/chebra.png" muted
+            playsinline></video>
+        </div>
+        <div class="caso-info">
+          <div class="caso-num">003</div>
+          <div class="caso-nombre">Chebra</div>
+          <ul class="caso-ecosistema" data-i18n="caso.003.eco">
+            <li>Web presence para restaurante</li>
+            <li>Menú digital y punto de contacto</li>
+            <li>Identidad digital y comunicación de marca</li>
+          </ul>
+          <div class="caso-tags">
+            <span class="tag">React</span>
+            <span class="tag">Vite</span>
+            <span class="tag">Supabase</span>
+          </div>
+          <a href="https://chebra.com.ar/" class="caso-link" target="_blank" rel="noopener"><span
+              data-i18n="caso.link">Ver proyecto</span> <span class="caso-link-arrow">↗</span></a>
+        </div>
+      </div>
+
+      <!-- 4: Prode Mundial — SaaS deportivo -->
+      <div class="caso-card reveal">
+        <div class="caso-thumb">
+          <span class="caso-industry" data-i18n="caso.004.industry">SaaS / Deportes</span>
+          <img src="img/proyectos/prode2026.png" alt="Prode Mundial 2026" class="img--top">
+        </div>
+        <div class="caso-info">
+          <div class="caso-num">004</div>
+          <div class="caso-nombre">Prode Mundial</div>
+          <ul class="caso-ecosistema" data-i18n="caso.004.eco">
+            <li>Plataforma SaaS de pronósticos para el mundial</li>
+            <li>Gestión de ligas privadas y grupos</li>
+            <li>Ranking en tiempo real y sistema de puntos</li>
+            <li>Integración de pagos y suscripciones</li>
+          </ul>
+          <div class="caso-tags">
+            <span class="tag">React</span>
+            <span class="tag">Vite</span>
+            <span class="tag">Supabase</span>
+            <span class="tag">SaaS</span>
+          </div>
+          <a href="https://fixture.chebra.com.ar/" class="caso-link"><span data-i18n="caso.link">Ver proyecto</span>
+            <span class="caso-link-arrow">↗</span></a>
+        </div>
+      </div>
+
+      <!-- 5: getdishub — span 4, rows 2-3 -->
+      <div class="caso-card reveal">
+        <div class="caso-thumb caso-thumb--loading">
+          <span class="caso-industry" data-i18n="caso.005.industry">Startups</span>
+          <div class="thumb-loading">
+            <span class="thumb-loading-label" data-i18n="caso.005.loading">Captura próximamente</span>
+            <div class="thumb-loading-bar">
+              <div class="thumb-loading-progress"></div>
+            </div>
+          </div>
+        </div>
+        <div class="caso-info">
+          <div class="caso-num">005</div>
+          <div class="caso-nombre">getdishub.app</div>
+          <ul class="caso-ecosistema" data-i18n="caso.005.eco">
+            <li>Landing de conversión + plataforma</li>
+            <li>Integración de pagos Stripe</li>
+            <li>Dashboard de métricas</li>
+          </ul>
+          <div class="caso-tags">
+            <span class="tag">React</span>
+            <span class="tag">Python</span>
+            <span class="tag">Stripe</span>
+          </div>
+          <a href="https://getdishub.app" class="caso-link" target="_blank" rel="noopener"><span
+              data-i18n="caso.link">Ver proyecto</span> <span class="caso-link-arrow">↗</span></a>
+        </div>
+      </div>
+
+      <!-- 4: insertcoin — span 8, row 2 -->
+      <div class="caso-card reveal">
+        <div class="caso-thumb">
+          <span class="caso-industry" data-i18n="caso.006.industry">Entretenimiento</span>
+          <img src="img/proyectos/insertcoin.png" alt="Insert Coin" class="img--top">
+        </div>
+        <div class="caso-info">
+          <div class="caso-num">006</div>
+          <div class="caso-nombre">Insert Coin</div>
+          <ul class="caso-ecosistema" data-i18n="caso.006.eco">
+            <li>Web para sala de arcade y entretenimiento</li>
+            <li>Catálogo de máquinas y reservas online</li>
+            <li>Blog de cultura gamer y novedades</li>
+            <li>Identidad digital y producción visual</li>
+          </ul>
+          <div class="caso-tags">
+            <span class="tag">React</span>
+            <span class="tag">Vite</span>
+            <span class="tag">Supabase</span>
+          </div>
+          <a href="https://insertcoin-six.vercel.app/" class="caso-link" target="_blank" rel="noopener"><span
+              data-i18n="caso.link">Ver proyecto</span> <span class="caso-link-arrow">↗</span></a>
+        </div>
+      </div>
+
+      <!-- 5: Olazabal — span 5, row 3 -->
+      <div class="caso-card reveal">
+        <div class="caso-thumb">
+          <span class="caso-industry" data-i18n="caso.007.industry">Gastronomía</span>
+          <video class="img--top caso-video" src="videos/olazabal.webm" poster="img/proyectos/olazabal.png" muted
+            playsinline></video>
+        </div>
+        <div class="caso-info">
+          <div class="caso-num">007</div>
+          <div class="caso-nombre">Olazabal Café</div>
+          <ul class="caso-ecosistema" data-i18n="caso.007.eco">
+            <li>Web completa con menú y e-commerce</li>
+            <li>Sistema de pedidos online</li>
+            <li>Sesión fotográfica de productos y espacio</li>
+            <li>Identidad digital y redes sociales</li>
+          </ul>
+          <div class="caso-tags">
+            <span class="tag">React</span>
+            <span class="tag">Vite</span>
+            <span class="tag">Supabase</span>
+            <span class="tag">Fotografía</span>
+          </div>
+          <a href="https://olazabal.ar" class="caso-link" target="_blank" rel="noopener"><span data-i18n="caso.link">Ver
+              proyecto</span> <span class="caso-link-arrow">↗</span></a>
+        </div>
+      </div>
+
+      <!-- 6: Siderplac — span 3, row 3 -->
+      <div class="caso-card reveal">
+        <div class="caso-thumb">
+          <span class="caso-industry" data-i18n="caso.008.industry">SaaS / Construcción</span>
+          <img src="img/proyectos/siderplac.png" alt="Siderplac" class="img--top">
+        </div>
+        <div class="caso-info">
+          <div class="caso-num">008</div>
+          <div class="caso-nombre">Siderplac</div>
+          <ul class="caso-ecosistema" data-i18n="caso.008.eco">
+            <li>App de cotización de materiales para construcción en seco</li>
+            <li>Cálculo automático por tipo y dimensión de obra</li>
+            <li>Deploy en Vercel con actualizaciones en tiempo real</li>
+          </ul>
+          <div class="caso-tags">
+            <span class="tag">React</span>
+            <span class="tag">Vite</span>
+            <span class="tag">Supabase</span>
+            <span class="tag">Vercel</span>
+          </div>
+          <a href="https://app.siderplac.com.ar/" class="caso-link" target="_blank" rel="noopener"><span
+              data-i18n="caso.link">Ver proyecto</span> <span class="caso-link-arrow">↗</span></a>
+        </div>
+      </div>
+
+      <!-- 7: Lugo — span 4, row 3 (col 1 explícita) -->
+      <div class="caso-card reveal">
+        <div class="caso-thumb">
+          <span class="caso-industry" data-i18n="caso.010.industry">Gastronomía</span>
+          <img src="img/proyectos/lugo.png" alt="Lugo">
+        </div>
+        <div class="caso-info">
+          <div class="caso-num">010</div>
+          <div class="caso-nombre">Lugo</div>
+          <ul class="caso-ecosistema" data-i18n="caso.010.eco">
+            <li>Landing pre-lanzamiento con countdown activo</li>
+            <li>Sistema de pedidos online</li>
+            <li>Captación de emails y lista de espera</li>
+            <li>Identidad visual para panadería artesanal BA</li>
+          </ul>
+          <div class="caso-tags">
+            <span class="tag">React</span>
+            <span class="tag">Vite</span>
+            <span class="tag">Tailwind</span>
+          </div>
+          <a href="https://lugo.ar" class="caso-link" target="_blank" rel="noopener"><span data-i18n="caso.link">Ver
+              proyecto</span> <span class="caso-link-arrow">↗</span></a>
+        </div>
+      </div>
+
+      <!-- 8: anotame — span 12, row 4 -->
+      <div class="caso-card reveal">
+        <div class="caso-thumb">
+          <span class="caso-industry" data-i18n="caso.009.industry">Producto personal</span>
+          <img src="img/proyectos/anotamexyz.png" alt="anotame.xyz" class="img--top">
+        </div>
+        <div class="caso-info">
+          <div class="caso-num">009</div>
+          <div class="caso-nombre">anotame.xyz</div>
+          <ul class="caso-ecosistema" data-i18n="caso.009.eco">
+            <li>Anotador digital para Truco, Chinchón, Escoba y Generala</li>
+            <li>Diseño brutalista — tipografía pesada, grillas rotas, sin ornamentos</li>
+            <li>Producto propio, open source</li>
+          </ul>
+          <div class="caso-tags">
+            <span class="tag">React</span>
+            <span class="tag">Vite</span>
+            <span class="tag">Brutalismo</span>
+            <span class="tag">Producto propio</span>
+          </div>
+          <a href="https://anotame.xyz" class="caso-link" target="_blank" rel="noopener"><span data-i18n="caso.link">Ver
+              proyecto</span> <span class="caso-link-arrow">↗</span></a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- GALERÍA -->
+  <section class="galeria-section" id="galeria">
+    <div class="galeria-intro reveal">
+      <div>
+        <div class="section-label" data-i18n="galeria.label">Ojo visual</div>
+        <h2 class="galeria-titulo" data-i18n="galeria.titulo">
+          Foto<br>
+          <span>grafía</span>
+        </h2>
+      </div>
+      <p class="galeria-desc" data-i18n="galeria.desc">
+        La misma sensibilidad que aplico a la fotografía callejera, gastronómica y documental la traigo al producto
+        digital. El ojo que distingue una buena composición también distingue una buena interfaz.
       </p>
     </div>
 
-    <div class="propuesta-items">
-      <div class="propuesta-item">
-        <span class="propuesta-num">01</span>
-        <div>
-          <div class="propuesta-item-title" data-i18n="propuesta.01.title">Frontend de alto impacto</div>
-          <div class="propuesta-item-desc" data-i18n="propuesta.01.desc">React, Vite, animaciones fluidas. Interfaces que convierten y que los usuarios disfrutan usar.</div>
-        </div>
+    <div class="galeria-grid">
+      <div class="galeria-item tall">
+        <img src="img/fotos/photo33.webp" alt="Fotografía">
+        <div class="galeria-overlay"><span class="galeria-num">033</span></div>
       </div>
-      <div class="propuesta-item">
-        <span class="propuesta-num">02</span>
-        <div>
-          <div class="propuesta-item-title" data-i18n="propuesta.02.title">SaaS & sistemas complejos</div>
-          <div class="propuesta-item-desc" data-i18n="propuesta.02.desc">Plataformas multitenant, paneles admin, integraciones API. Arquitecturas que escalan.</div>
-        </div>
+      <div class="galeria-item">
+        <img src="img/fotos/photo46.webp" alt="Fotografía">
+        <div class="galeria-overlay"><span class="galeria-num">046</span></div>
       </div>
-      <div class="propuesta-item">
-        <span class="propuesta-num">03</span>
-        <div>
-          <div class="propuesta-item-title" data-i18n="propuesta.03.title">Automatización inteligente</div>
-          <div class="propuesta-item-desc" data-i18n="propuesta.03.desc">Flujos con IA, integraciones con n8n, APIs. Procesos que corren solos.</div>
-          <span class="propuesta-tagline">Humano primero. Potenciado por IA.</span>
-        </div>
+      <div class="galeria-item">
+        <img src="img/fotos/photo4.webp" alt="Fotografía">
+        <div class="galeria-overlay"><span class="galeria-num">004</span></div>
       </div>
-      <div class="propuesta-item">
-        <span class="propuesta-num">04</span>
-        <div>
-          <div class="propuesta-item-title" data-i18n="propuesta.04.title">Criterio visual de productor</div>
-          <div class="propuesta-item-desc" data-i18n="propuesta.04.desc">Años de fotografía aplicados al producto digital. Sé lo que se ve bien y por qué.</div>
-        </div>
+      <div class="galeria-item">
+        <img src="img/fotos/photo50.webp" alt="Fotografía">
+        <div class="galeria-overlay"><span class="galeria-num">050</span></div>
       </div>
-    </div>
-  </div>
-</div>
-
-<!-- CASOS -->
-<section class="casos" id="casos">
-  <div class="casos-header reveal">
-    <div>
-      <div class="section-label" data-i18n="casos.label">Casos de estudio</div>
-      <h2 class="casos-titulo" data-i18n="casos.titulo">
-        Ecosistemas<br>
-        <span>completos.</span>
-      </h2>
-    </div>
-    <p class="casos-desc" data-i18n="casos.desc">No vendo servicios sueltos — armo el ecosistema digital completo para cada cliente. Web, identidad, fotografía y automatización bajo una sola visión.</p>
-  </div>
-
-  <div class="casos-grid">
-
-    <!-- 1: Gualicho — span 7, row 1 -->
-    <div class="caso-card reveal">
-      <div class="caso-thumb">
-        <span class="caso-industry" data-i18n="caso.001.industry">Cervecería</span>
-        <img src="img/proyectos/gualichobeer.png" alt="Gualicho Beer" class="img--top">
+      <div class="galeria-item">
+        <img src="img/fotos/photo67.webp" alt="Fotografía">
+        <div class="galeria-overlay"><span class="galeria-num">067</span></div>
       </div>
-      <div class="caso-info">
-        <div class="caso-num">001</div>
-        <div class="caso-nombre">Gualicho Beer</div>
-        <ul class="caso-ecosistema" data-i18n="caso.001.eco">
-          <li>Web institucional para cervecería artesanal</li>
-          <li>Identidad digital y comunicación de marca</li>
-          <li>Catálogo de productos y punto de contacto</li>
-          <li>Sistema de alquiler de choperas para eventos</li>
-          <li>Compra de birras sin hacer colas vía QR</li>
-        </ul>
-        <div class="caso-tags">
-          <span class="tag">Web</span>
-          <span class="tag">Branding</span>
-          <span class="tag">Gastronomía</span>
-        </div>
-        <a href="https://www.gualicho.beer/" class="caso-link" target="_blank" rel="noopener"><span data-i18n="caso.link">Ver proyecto</span> <span class="caso-link-arrow">↗</span></a>
+      <div class="galeria-item">
+        <img src="img/fotos/photo6.webp" alt="Fotografía">
+        <div class="galeria-overlay"><span class="galeria-num">006</span></div>
+      </div>
+      <div class="galeria-item">
+        <img src="img/fotos/photo74.webp" alt="Fotografía">
+        <div class="galeria-overlay"><span class="galeria-num">074</span></div>
+      </div>
+      <div class="galeria-item">
+        <img src="img/fotos/photo89.webp" alt="Fotografía">
+        <div class="galeria-overlay"><span class="galeria-num">089</span></div>
+      </div>
+      <div class="galeria-item">
+        <img src="img/fotos/photo92.webp" alt="Fotografía">
+        <div class="galeria-overlay"><span class="galeria-num">092</span></div>
+      </div>
+      <div class="galeria-item">
+        <img src="img/fotos/photo9.webp" alt="Fotografía">
+        <div class="galeria-overlay"><span class="galeria-num">009</span></div>
+      </div>
+      <div class="galeria-item">
+        <img src="img/fotos/_CSC1687.webp" alt="Fotografía">
+        <div class="galeria-overlay"><span class="galeria-num">1687</span></div>
       </div>
     </div>
 
-    <!-- 2: CGYRM — span 5, row 1 -->
-    <div class="caso-card reveal">
-      <div class="caso-thumb">
-        <span class="caso-industry" data-i18n="caso.002.industry">Estudios profesionales</span>
-        <video class="img--top caso-video" src="videos/studiojuridico.webm" poster="img/proyectos/cyornm.png" muted playsinline></video>
-      </div>
-      <div class="caso-info">
-        <div class="caso-num">002</div>
-        <div class="caso-nombre">CyOr &NM Estudio Jurídico</div>
-        <ul class="caso-ecosistema" data-i18n="caso.002.eco">
-          <li>Plataforma SaaS con gestión de casos</li>
-          <li>Panel administrativo completo</li>
-          <li>Sesión de fotos para la web</li>
-        </ul>
-        <div class="caso-tags">
-          <span class="tag">React</span>
-          <span class="tag">Node.js</span>
-          <span class="tag">Supabase</span>
-          <span class="tag">SaaS</span>
-        </div>
-        <a href="https://estudiojuridicocyorynm.com.ar/" class="caso-link" target="_blank" rel="noopener"><span data-i18n="caso.link">Ver proyecto</span> <span class="caso-link-arrow">↗</span></a>
-      </div>
+    <div class="galeria-cta">
+      <a href="galeria.html" class="btn-ghost btn-galeria" data-after="Ver galería →">
+        <span data-i18n="galeria.btn">Ver galería completa</span>
+        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none"
+          stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M5 12h14M12 5l7 7-7 7" />
+        </svg>
+      </a>
     </div>
+  </section>
 
-    <!-- 3: Chebra — web institucional -->
-    <div class="caso-card reveal">
-      <div class="caso-thumb">
-        <span class="caso-industry" data-i18n="caso.003.industry">Gastronomía</span>
-        <video class="img--top caso-video" src="videos/chebra.webm" poster="img/proyectos/chebra.png" muted playsinline></video>
+  <!-- STACK -->
+  <section class="stack-section" id="stack">
+    <div class="section-label" data-i18n="stack.label">Stack técnico</div>
+    <div class="stack-grid reveal-grid">
+      <div class="stack-item"><i class="stack-icon devicon-react-original"></i><span class="stack-name">React</span>
       </div>
-      <div class="caso-info">
-        <div class="caso-num">003</div>
-        <div class="caso-nombre">Chebra</div>
-        <ul class="caso-ecosistema" data-i18n="caso.003.eco">
-          <li>Web presence para restaurante</li>
-          <li>Menú digital y punto de contacto</li>
-          <li>Identidad digital y comunicación de marca</li>
-        </ul>
-        <div class="caso-tags">
-          <span class="tag">React</span>
-          <span class="tag">Vite</span>
-          <span class="tag">Supabase</span>
-        </div>
-        <a href="https://chebra.com.ar/" class="caso-link" target="_blank" rel="noopener"><span data-i18n="caso.link">Ver proyecto</span> <span class="caso-link-arrow">↗</span></a>
+      <div class="stack-item"><i class="stack-icon devicon-vitejs-plain"></i><span class="stack-name">Vite</span></div>
+      <div class="stack-item"><i class="stack-icon devicon-nodejs-plain"></i><span class="stack-name">Node.js</span>
+      </div>
+      <div class="stack-item"><i class="stack-icon devicon-python-plain"></i><span class="stack-name">Python</span>
+      </div>
+      <div class="stack-item"><i class="stack-icon devicon-supabase-plain"></i><span class="stack-name">Supabase</span>
+      </div>
+      <div class="stack-item"><i class="stack-icon devicon-mongodb-plain"></i><span class="stack-name">MongoDB</span>
+      </div>
+      <div class="stack-item">
+        <svg class="stack-icon stack-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+          stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="12" cy="5" r="2" />
+          <circle cx="5" cy="19" r="2" />
+          <circle cx="19" cy="19" r="2" />
+          <path d="M12 7v4M12 11l-5 6M12 11l5 6" />
+        </svg>
+        <span class="stack-name">n8n</span>
+      </div>
+      <div class="stack-item">
+        <svg class="stack-icon stack-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+          stroke-linecap="round" stroke-linejoin="round">
+          <path
+            d="M9.5 2A2.5 2.5 0 0 1 12 4.5v15a2.5 2.5 0 0 1-4.96-.46 2.5 2.5 0 0 1-2.96-3.08 3 3 0 0 1-.34-5.58 2.5 2.5 0 0 1 1.32-4.24 2.5 2.5 0 0 1 1.98-3A2.5 2.5 0 0 1 9.5 2Z" />
+          <path
+            d="M14.5 2A2.5 2.5 0 0 0 12 4.5v15a2.5 2.5 0 0 0 4.96-.46 2.5 2.5 0 0 0 2.96-3.08 3 3 0 0 0 .34-5.58 2.5 2.5 0 0 0-1.32-4.24 2.5 2.5 0 0 0-1.98-3A2.5 2.5 0 0 0 14.5 2Z" />
+        </svg>
+        <span class="stack-name">AI / LLMs</span>
+      </div>
+      <div class="stack-item"><i class="stack-icon devicon-docker-plain"></i><span class="stack-name">Docker</span>
       </div>
     </div>
+  </section>
 
-    <!-- 4: Prode Mundial — SaaS deportivo -->
-    <div class="caso-card reveal">
-      <div class="caso-thumb">
-        <span class="caso-industry" data-i18n="caso.004.industry">SaaS / Deportes</span>
-        <img src="img/proyectos/prode2026.png" alt="Prode Mundial 2026" class="img--top">
-      </div>
-      <div class="caso-info">
-        <div class="caso-num">004</div>
-        <div class="caso-nombre">Prode Mundial</div>
-        <ul class="caso-ecosistema" data-i18n="caso.004.eco">
-          <li>Plataforma SaaS de pronósticos para el mundial</li>
-          <li>Gestión de ligas privadas y grupos</li>
-          <li>Ranking en tiempo real y sistema de puntos</li>
-          <li>Integración de pagos y suscripciones</li>
-        </ul>
-        <div class="caso-tags">
-          <span class="tag">React</span>
-          <span class="tag">Vite</span>
-          <span class="tag">Supabase</span>
-          <span class="tag">SaaS</span>
-        </div>
-        <a href="https://fixture.chebra.com.ar/" class="caso-link"><span data-i18n="caso.link">Ver proyecto</span> <span class="caso-link-arrow">↗</span></a>
-      </div>
-    </div>
-
-    <!-- 5: getdishub — span 4, rows 2-3 -->
-    <div class="caso-card reveal">
-      <div class="caso-thumb caso-thumb--loading">
-        <span class="caso-industry" data-i18n="caso.005.industry">Startups</span>
-        <div class="thumb-loading">
-          <span class="thumb-loading-label" data-i18n="caso.005.loading">Captura próximamente</span>
-          <div class="thumb-loading-bar"><div class="thumb-loading-progress"></div></div>
-        </div>
-      </div>
-      <div class="caso-info">
-        <div class="caso-num">005</div>
-        <div class="caso-nombre">getdishub.app</div>
-        <ul class="caso-ecosistema" data-i18n="caso.005.eco">
-          <li>Landing de conversión + plataforma</li>
-          <li>Integración de pagos Stripe</li>
-          <li>Dashboard de métricas</li>
-        </ul>
-        <div class="caso-tags">
-          <span class="tag">React</span>
-          <span class="tag">Python</span>
-          <span class="tag">Stripe</span>
-        </div>
-        <a href="https://getdishub.app" class="caso-link" target="_blank" rel="noopener"><span data-i18n="caso.link">Ver proyecto</span> <span class="caso-link-arrow">↗</span></a>
-      </div>
-    </div>
-
-    <!-- 4: insertcoin — span 8, row 2 -->
-    <div class="caso-card reveal">
-      <div class="caso-thumb">
-        <span class="caso-industry" data-i18n="caso.006.industry">Entretenimiento</span>
-        <img src="img/proyectos/insertcoin.png" alt="Insert Coin" class="img--top">
-      </div>
-      <div class="caso-info">
-        <div class="caso-num">006</div>
-        <div class="caso-nombre">Insert Coin</div>
-        <ul class="caso-ecosistema" data-i18n="caso.006.eco">
-          <li>Web para sala de arcade y entretenimiento</li>
-          <li>Catálogo de máquinas y reservas online</li>
-          <li>Blog de cultura gamer y novedades</li>
-          <li>Identidad digital y producción visual</li>
-        </ul>
-        <div class="caso-tags">
-          <span class="tag">React</span>
-          <span class="tag">Vite</span>
-          <span class="tag">Supabase</span>
-        </div>
-        <a href="https://insertcoin-six.vercel.app/" class="caso-link" target="_blank" rel="noopener"><span data-i18n="caso.link">Ver proyecto</span> <span class="caso-link-arrow">↗</span></a>
-      </div>
-    </div>
-
-    <!-- 5: Olazabal — span 5, row 3 -->
-    <div class="caso-card reveal">
-      <div class="caso-thumb">
-        <span class="caso-industry" data-i18n="caso.007.industry">Gastronomía</span>
-        <video class="img--top caso-video" src="videos/olazabal.webm" poster="img/proyectos/olazabal.png" muted playsinline></video>
-      </div>
-      <div class="caso-info">
-        <div class="caso-num">007</div>
-        <div class="caso-nombre">Olazabal Café</div>
-        <ul class="caso-ecosistema" data-i18n="caso.007.eco">
-          <li>Web completa con menú y e-commerce</li>
-          <li>Sistema de pedidos online</li>
-          <li>Sesión fotográfica de productos y espacio</li>
-          <li>Identidad digital y redes sociales</li>
-        </ul>
-        <div class="caso-tags">
-          <span class="tag">React</span>
-          <span class="tag">Vite</span>
-          <span class="tag">Supabase</span>
-          <span class="tag">Fotografía</span>
-        </div>
-        <a href="https://olazabal.ar" class="caso-link" target="_blank" rel="noopener"><span data-i18n="caso.link">Ver proyecto</span> <span class="caso-link-arrow">↗</span></a>
-      </div>
-    </div>
-
-    <!-- 6: Siderplac — span 3, row 3 -->
-    <div class="caso-card reveal">
-      <div class="caso-thumb">
-        <span class="caso-industry" data-i18n="caso.008.industry">SaaS / Construcción</span>
-        <img src="img/proyectos/siderplac.png" alt="Siderplac" class="img--top">
-      </div>
-      <div class="caso-info">
-        <div class="caso-num">008</div>
-        <div class="caso-nombre">Siderplac</div>
-        <ul class="caso-ecosistema" data-i18n="caso.008.eco">
-          <li>App de cotización de materiales para construcción en seco</li>
-          <li>Cálculo automático por tipo y dimensión de obra</li>
-          <li>Deploy en Vercel con actualizaciones en tiempo real</li>
-        </ul>
-        <div class="caso-tags">
-          <span class="tag">React</span>
-          <span class="tag">Vite</span>
-          <span class="tag">Supabase</span>
-          <span class="tag">Vercel</span>
-        </div>
-        <a href="https://app.siderplac.com.ar/" class="caso-link" target="_blank" rel="noopener"><span data-i18n="caso.link">Ver proyecto</span> <span class="caso-link-arrow">↗</span></a>
-      </div>
-    </div>
-
-    <!-- 7: Lugo — span 4, row 3 (col 1 explícita) -->
-    <div class="caso-card reveal">
-      <div class="caso-thumb">
-        <span class="caso-industry" data-i18n="caso.010.industry">Gastronomía</span>
-        <img src="img/proyectos/lugo.png" alt="Lugo">
-      </div>
-      <div class="caso-info">
-        <div class="caso-num">010</div>
-        <div class="caso-nombre">Lugo</div>
-        <ul class="caso-ecosistema" data-i18n="caso.010.eco">
-          <li>Landing pre-lanzamiento con countdown activo</li>
-          <li>Sistema de pedidos online</li>
-          <li>Captación de emails y lista de espera</li>
-          <li>Identidad visual para panadería artesanal BA</li>
-        </ul>
-        <div class="caso-tags">
-          <span class="tag">React</span>
-          <span class="tag">Vite</span>
-          <span class="tag">Tailwind</span>
-        </div>
-        <a href="https://lugo.ar" class="caso-link" target="_blank" rel="noopener"><span data-i18n="caso.link">Ver proyecto</span> <span class="caso-link-arrow">↗</span></a>
-      </div>
-    </div>
-
-    <!-- 8: anotame — span 12, row 4 -->
-    <div class="caso-card reveal">
-      <div class="caso-thumb">
-        <span class="caso-industry" data-i18n="caso.009.industry">Producto personal</span>
-        <img src="img/proyectos/anotamexyz.png" alt="anotame.xyz" class="img--top">
-      </div>
-      <div class="caso-info">
-        <div class="caso-num">009</div>
-        <div class="caso-nombre">anotame.xyz</div>
-        <ul class="caso-ecosistema" data-i18n="caso.009.eco">
-          <li>Anotador digital para Truco, Chinchón, Escoba y Generala</li>
-          <li>Diseño brutalista — tipografía pesada, grillas rotas, sin ornamentos</li>
-          <li>Producto propio, open source</li>
-        </ul>
-        <div class="caso-tags">
-          <span class="tag">React</span>
-          <span class="tag">Vite</span>
-          <span class="tag">Brutalismo</span>
-          <span class="tag">Producto propio</span>
-        </div>
-        <a href="https://anotame.xyz" class="caso-link" target="_blank" rel="noopener"><span data-i18n="caso.link">Ver proyecto</span> <span class="caso-link-arrow">↗</span></a>
-      </div>
-    </div>
-
-  </div>
-</section>
-
-<!-- GALERÍA -->
-<section class="galeria-section" id="galeria">
-  <div class="galeria-intro reveal">
-    <div>
-      <div class="section-label" data-i18n="galeria.label">Ojo visual</div>
-      <h2 class="galeria-titulo" data-i18n="galeria.titulo">
-        Foto<br>
-        <span>grafía</span>
-      </h2>
-    </div>
-    <p class="galeria-desc" data-i18n="galeria.desc">
-      La misma sensibilidad que aplico a la fotografía callejera, gastronómica y documental la traigo al producto digital. El ojo que distingue una buena composición también distingue una buena interfaz.
-    </p>
-  </div>
-
-  <div class="galeria-grid">
-    <div class="galeria-item tall">
-      <img src="img/fotos/photo33.webp" alt="Fotografía">
-      <div class="galeria-overlay"><span class="galeria-num">033</span></div>
-    </div>
-    <div class="galeria-item">
-      <img src="img/fotos/photo46.webp" alt="Fotografía">
-      <div class="galeria-overlay"><span class="galeria-num">046</span></div>
-    </div>
-    <div class="galeria-item">
-      <img src="img/fotos/photo4.webp" alt="Fotografía">
-      <div class="galeria-overlay"><span class="galeria-num">004</span></div>
-    </div>
-    <div class="galeria-item">
-      <img src="img/fotos/photo50.webp" alt="Fotografía">
-      <div class="galeria-overlay"><span class="galeria-num">050</span></div>
-    </div>
-    <div class="galeria-item">
-      <img src="img/fotos/photo67.webp" alt="Fotografía">
-      <div class="galeria-overlay"><span class="galeria-num">067</span></div>
-    </div>
-    <div class="galeria-item">
-      <img src="img/fotos/photo6.webp" alt="Fotografía">
-      <div class="galeria-overlay"><span class="galeria-num">006</span></div>
-    </div>
-    <div class="galeria-item">
-      <img src="img/fotos/photo74.webp" alt="Fotografía">
-      <div class="galeria-overlay"><span class="galeria-num">074</span></div>
-    </div>
-    <div class="galeria-item">
-      <img src="img/fotos/photo89.webp" alt="Fotografía">
-      <div class="galeria-overlay"><span class="galeria-num">089</span></div>
-    </div>
-    <div class="galeria-item">
-      <img src="img/fotos/photo92.webp" alt="Fotografía">
-      <div class="galeria-overlay"><span class="galeria-num">092</span></div>
-    </div>
-    <div class="galeria-item">
-      <img src="img/fotos/photo9.webp" alt="Fotografía">
-      <div class="galeria-overlay"><span class="galeria-num">009</span></div>
-    </div>
-    <div class="galeria-item">
-      <img src="img/fotos/_CSC1687.webp" alt="Fotografía">
-      <div class="galeria-overlay"><span class="galeria-num">1687</span></div>
-    </div>
-  </div>
-
-  <div class="galeria-cta">
-    <a href="galeria.html" class="btn-ghost btn-galeria" data-after="Ver galería →">
-      <span data-i18n="galeria.btn">Ver galería completa</span>
-      <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-    </a>
-  </div>
-</section>
-
-<!-- STACK -->
-<section class="stack-section" id="stack">
-  <div class="section-label" data-i18n="stack.label">Stack técnico</div>
-  <div class="stack-grid reveal-grid">
-    <div class="stack-item"><i class="stack-icon devicon-react-original"></i><span class="stack-name">React</span></div>
-    <div class="stack-item"><i class="stack-icon devicon-vitejs-plain"></i><span class="stack-name">Vite</span></div>
-    <div class="stack-item"><i class="stack-icon devicon-nodejs-plain"></i><span class="stack-name">Node.js</span></div>
-    <div class="stack-item"><i class="stack-icon devicon-python-plain"></i><span class="stack-name">Python</span></div>
-    <div class="stack-item"><i class="stack-icon devicon-supabase-plain"></i><span class="stack-name">Supabase</span></div>
-    <div class="stack-item"><i class="stack-icon devicon-mongodb-plain"></i><span class="stack-name">MongoDB</span></div>
-    <div class="stack-item">
-      <svg class="stack-icon stack-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="5" r="2"/><circle cx="5" cy="19" r="2"/><circle cx="19" cy="19" r="2"/><path d="M12 7v4M12 11l-5 6M12 11l5 6"/></svg>
-      <span class="stack-name">n8n</span>
-    </div>
-    <div class="stack-item">
-      <svg class="stack-icon stack-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9.5 2A2.5 2.5 0 0 1 12 4.5v15a2.5 2.5 0 0 1-4.96-.46 2.5 2.5 0 0 1-2.96-3.08 3 3 0 0 1-.34-5.58 2.5 2.5 0 0 1 1.32-4.24 2.5 2.5 0 0 1 1.98-3A2.5 2.5 0 0 1 9.5 2Z"/><path d="M14.5 2A2.5 2.5 0 0 0 12 4.5v15a2.5 2.5 0 0 0 4.96-.46 2.5 2.5 0 0 0 2.96-3.08 3 3 0 0 0 .34-5.58 2.5 2.5 0 0 0-1.32-4.24 2.5 2.5 0 0 0-1.98-3A2.5 2.5 0 0 0 14.5 2Z"/></svg>
-      <span class="stack-name">AI / LLMs</span>
-    </div>
-    <div class="stack-item"><i class="stack-icon devicon-docker-plain"></i><span class="stack-name">Docker</span></div>
-  </div>
-</section>
-
-<!-- CONTACTO -->
-<div class="contacto" id="contacto">
-  <div class="contacto-left">
-    <div>
-      <div class="section-label" data-i18n="contacto.label">Siguiente paso</div>
-      <h2 class="contacto-titulo" data-i18n="contacto.titulo">
-        Hable<br>
-        <span>mos.</span>
-      </h2>
-    </div>
-    <div class="contacto-meta" data-i18n="contacto.meta">
-      Buenos Aires, Argentina<br>
-      Disponible para proyectos remotos<br>
-      y presenciales · <span id="contact-year">2025</span>
-    </div>
-  </div>
-
-  <div class="contacto-right">
-    <a href="mailto:facundonic.gonzalez@gmail.com" class="contacto-link">
+  <!-- CONTACTO -->
+  <div class="contacto" id="contacto">
+    <div class="contacto-left">
       <div>
-        <div class="contacto-link-label">Email</div>
-        <div>facundonic.gonzalez@gmail.com</div>
+        <div class="section-label" data-i18n="contacto.label">Siguiente paso</div>
+        <h2 class="contacto-titulo" data-i18n="contacto.titulo">
+          Hable<br>
+          <span>mos.</span>
+        </h2>
       </div>
-      <span class="arrow">↗</span>
-    </a>
-    <a href="https://wa.me/5491168980563" class="contacto-link" target="_blank" rel="noopener noreferrer">
-      <div>
-        <div class="contacto-link-label">WhatsApp</div>
-        <div>+54 9 11 6898-0563</div>
+      <div class="contacto-meta">
+        <span data-i18n="contacto.meta-location">Buenos Aires, Argentina · Trabajo remoto global · <span id="contact-year">2026</span></span>
+        <br><br><span class="contacto-frase"></span>
       </div>
-      <span class="arrow">↗</span>
-    </a>
-    <!-- LinkedIn — pendiente
+    </div>
+
+    <div class="contacto-right">
+      <a href="mailto:facundonic.gonzalez@gmail.com" class="contacto-link">
+        <div>
+          <div class="contacto-link-label">Email</div>
+          <div>facundonic.gonzalez@gmail.com</div>
+        </div>
+        <span class="arrow">↗</span>
+      </a>
+      <a href="https://wa.me/5491168980563" class="contacto-link" target="_blank" rel="noopener noreferrer">
+        <div>
+          <div class="contacto-link-label">WhatsApp</div>
+          <div>+54 9 11 6898-0563</div>
+        </div>
+        <span class="arrow">↗</span>
+      </a>
+      <!-- LinkedIn — pendiente
     <a href="https://linkedin.com" class="contacto-link">
       <div>
         <div class="contacto-link-label">LinkedIn</div>
@@ -712,36 +771,55 @@
       <span class="arrow">↗</span>
     </a>
     -->
-    <a href="https://instagram.com/cufa.dev" class="contacto-link" target="_blank" rel="noopener noreferrer">
-      <div>
-        <div class="contacto-link-label">Instagram</div>
-        <div>@cufa.dev</div>
-      </div>
-      <span class="arrow">↗</span>
-    </a>
+      <a href="https://instagram.com/cufa.dev" class="contacto-link" target="_blank" rel="noopener noreferrer">
+        <div>
+          <div class="contacto-link-label">Instagram</div>
+          <div>@cufa.dev</div>
+        </div>
+        <span class="arrow">↗</span>
+      </a>
+    </div>
   </div>
-</div>
 
-<!-- FOOTER -->
-<footer>
-  <span class="footer-copy" data-i18n="footer.copy">© <span id="footer-year">2025</span> CUFA · Hecho con 🧉 en Buenos Aires · <span style="font-family:var(--mono);opacity:0.4;font-size:10px;">v2.1.3</span></span>
-  <ul class="footer-links">
-    <li><a href="#casos" data-i18n="nav.casos">Casos</a></li>
-    <li><a href="#galeria" data-i18n="nav.galeria">Galería</a></li>
-    <li><a href="#stack" data-i18n="nav.stack">Stack</a></li>
-    <li><a href="#contacto" data-i18n="contacto.label.footer">Contacto</a></li>
-  </ul>
-</footer>
+  <!-- FOOTER -->
+  <footer>
+    <span class="footer-copy" data-i18n="footer.copy">© <span id="footer-year">2025</span> CUFA · Hecho con 🧉 en Buenos
+      Aires · <span style="font-family:var(--mono);opacity:0.4;font-size:10px;">v2.1.3</span></span>
+    <ul class="footer-links">
+      <li><a href="#casos" data-i18n="nav.casos">Casos</a></li>
+      <li><a href="#galeria" data-i18n="nav.galeria">Galería</a></li>
+      <li><a href="#stack" data-i18n="nav.stack">Stack</a></li>
+      <li><a href="#contacto" data-i18n="contacto.label.footer">Contacto</a></li>
+    </ul>
+  </footer>
 
-<script src="js/script.js"></script>
-<script src="https://unpkg.com/lenis@latest/dist/lenis.min.js"></script>
-<script>
-  const lenis = new Lenis();
-  function raf(time) {
-    lenis.raf(time);
+  <script src="js/script.js"></script>
+  <script>
+    (function () {
+      const meses = ['Enero','Febrero','Marzo','Abril','Mayo','Junio','Julio','Agosto','Septiembre','Octubre','Noviembre','Diciembre'];
+      const siguienteMes = meses[(new Date().getMonth() + 1) % 12];
+      const frases = [
+        siguienteMes + ' tiene un lugar libre.<br>Después, lista de espera.',
+        'No soy una agencia.<br>Soy una persona que sabe lo que hace.',
+        'Si estás leyendo esto<br>ya me encontraste antes que tu competencia.',
+        'El código se olvida.<br>La experiencia del usuario, no.',
+        'Este sitio lo hice yo.<br>El tuyo puede ser mejor.',
+        'Trabajo con pocos.<br>Para que cada uno valga.',
+        'React · Python · Criterio.<br>En ese orden.',
+        'Buenos Aires no es Nueva York.<br>Pero el código corre igual.',
+      ];
+      document.querySelector('.contacto-frase').innerHTML = frases[new Date().getDate() % frases.length];
+    })();
+  </script>
+  <script src="https://unpkg.com/lenis@latest/dist/lenis.min.js"></script>
+  <script>
+    const lenis = new Lenis();
+    function raf(time) {
+      lenis.raf(time);
+      requestAnimationFrame(raf);
+    }
     requestAnimationFrame(raf);
-  }
-  requestAnimationFrame(raf);
-</script>
+  </script>
 </body>
+
 </html>
