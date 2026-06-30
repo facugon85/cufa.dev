@@ -1,0 +1,26 @@
+# CUFA
+
+> Desarrollador full-stack y productor visual freelance con base en Buenos Aires, Argentina. Construye SaaS, soluciones digitales para negocios locales, automatización con IA y cubre producción fotográfica de producto/eventos.
+
+CUFA (Facundo González) trabaja solo o con colaboradores en proyectos de software y producción visual. Stack principal: Node.js, TypeScript, React, Next.js, Python, Supabase. Industrias atendidas: gastronomía, eventos, estudios profesionales, startups. Opera un servidor propio para automatización (bots, agentes de IA) y ofrece servicios de fotografía de producto y eventos con equipo Nikon D810.
+
+## Servicios
+
+- [Desarrollo Full-Stack](https://cufagon.xyz/#servicios): aplicaciones web, plataformas SaaS, paneles de gestión.
+- [Automatización con IA](https://cufagon.xyz/#servicios): agentes WhatsApp, bots de atención, scraping y generación de leads.
+- [Fotografía de producto y eventos](https://cufagon.xyz/#fotografia): cobertura con Nikon D810.
+
+## Proyectos
+
+- [Dishub](https://getdishub.app): plataforma SaaS de reservas y turnos para gastronomía.
+- [Chebra Barber & Foodbar](https://cufagon.xyz/#proyectos): app de prode del Mundial 2026 + generador de stories.
+- [anotame.xyz](https://anotame.xyz): anotador de juegos de cartas argentinos (Truco, Chinchón, Generala, Escoba de 15).
+
+## Contacto
+
+- [Portfolio](https://cufagon.xyz)
+- WhatsApp / contacto directo vía formulario en el sitio.
+
+## Optional
+
+- Cobertura geográfica: Buenos Aires (CABA y GBA), trabajo remoto para clientes internacionales (cobros vía Takenos).
