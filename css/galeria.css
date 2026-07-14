@@ -190,8 +190,22 @@ nav {
   transition: background 0.3s;
 }
 
+.grid-overlay::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(0,0,0,0.75) 0%, rgba(0,0,0,0.35) 35%, rgba(0,0,0,0) 70%);
+  opacity: 0;
+  transition: opacity 0.3s;
+  pointer-events: none;
+}
+
 .grid-item:hover .grid-overlay {
   background: rgba(255,77,0,0.1);
+}
+
+.grid-item:hover .grid-overlay::before {
+  opacity: 1;
 }
 
 .grid-num {
@@ -199,9 +213,44 @@ nav {
   font-size: 10px;
   color: rgba(255,255,255,0);
   transition: color 0.3s;
+  position: relative;
+  z-index: 1;
 }
 
 .grid-item:hover .grid-num { color: rgba(255,255,255,0.6); }
+
+.grid-caption {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+  opacity: 0;
+  transform: translateY(6px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.grid-item:hover .grid-caption {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.grid-caption-title {
+  font-family: var(--mono);
+  font-size: 11px;
+  letter-spacing: 0.04em;
+  color: #fff;
+  text-shadow: 0 1px 4px rgba(0,0,0,0.8);
+}
+
+.grid-caption-location {
+  font-family: var(--mono);
+  font-size: 9px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.6);
+  text-shadow: 0 1px 4px rgba(0,0,0,0.8);
+}
 
 footer {
   background: var(--bg);

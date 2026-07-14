@@ -198,6 +198,7 @@ const translations = {
   es: {
     'nav.casos': 'Casos',
     'nav.galeria': 'Galería',
+    'nav.menu': 'Menú',
     'nav.stack': 'Stack',
     'nav.cta': 'Hablemos →',
     'hero.eyebrow': 'Creador Digital',
@@ -245,6 +246,33 @@ const translations = {
     'caso.009.eco': '<li>Anotador digital para Truco, Chinchón, Escoba y Generala</li><li>Diseño brutalista — tipografía pesada, grillas rotas, sin ornamentos</li><li>Producto propio, open source</li>',
     'caso.010.eco': '<li>Landing pre-lanzamiento con countdown activo</li><li>Sistema de pedidos online</li><li>Captación de emails y lista de espera</li><li>Identidad visual para panadería artesanal BA</li>',
     'caso.link': 'Ver proyecto',
+    'soluciones.label': 'Soluciones',
+    'soluciones.titulo': 'Productos<br><span>listos.</span>',
+    'soluciones.desc': 'No solo proyectos a medida — también tengo soluciones construidas con demanda real, listas para adaptar y desplegar en semanas para tu negocio.',
+    'solucion.01.badge': 'El diferenciador',
+    'solucion.01.nombre': 'WhatsApp AI Agent',
+    'solucion.01.bajada': 'Un empleado que nunca duerme. Atiende el WhatsApp de tu negocio 24/7: responde consultas, agenda reservas y te avisa cuando te necesita.',
+    'solucion.01.eco': '<li>Responde precios, horarios y consultas al instante, con tu tono</li><li>Agenda reservas solo, directo a tu panel</li><li>Deriva a humano cuando la charla lo pide</li><li>Vos aprobás los mensajes sensibles antes de que salgan</li><li>Aprende de tu carta, tus servicios y tus reglas</li><li>Atiende 30 chats a la vez un sábado a la noche</li>',
+    'solucion.01.chat1': 'Hola! Tienen mesa para 4 hoy a las 21?',
+    'solucion.01.chat2': 'Sí! Mesa para 4 disponible a las 21:00. ¿La confirmo a tu nombre?',
+    'solucion.01.chat3': 'Dale, Juan',
+    'solucion.01.chat4': 'Listo Juan, reserva confirmada para hoy 21:00 🍻<span class="chat-check">✓✓</span>',
+    'solucion.02.nombre': 'Sistema de reservas',
+    'solucion.02.bajada': 'Página de reservas propia, link compartible',
+    'solucion.02.eco': '<li>Confirmación automática al cliente</li><li>Recordatorios para bajar ausencias</li><li>Horarios, cupos y días bloqueados configurables</li>',
+    'solucion.03.nombre': 'Menú digital',
+    'solucion.03.bajada1': 'Tu carta en el celular del cliente. Sin app, sin descarga. QR → listo.',
+    'solucion.03.bajada2': 'Carta con fotos, categorías y precios',
+    'solucion.03.eco': '<li>Actualizás precios al instante, sin reimprimir nada</li><li>QR para mesas, mostrador o Instagram</li><li>Marcás platos agotados con un toque</li>',
+    'solucion.04.nombre': 'Panel de administración',
+    'solucion.04.bajada': 'Productos, precios y stock desde el celular',
+    'solucion.04.eco': '<li>Turnos del día en una sola vista</li><li>Métricas: qué se vende, cuándo, cuánto</li>',
+    'solucion.05.nombre': 'Mesa inteligente',
+    'solucion.05.bajada': 'Un toque del celular y el cliente está adentro: carta, reservas y reseñas. Sticker NFC o stand impreso en 3D, con tu marca.',
+    'solucion.05.eco': '<li>Sin app: apoya el celular y listo</li><li>Un solo punto que lleva a carta, reservas y reseñas en Google</li><li>Stand 3D o sticker, diseñado con tu identidad</li><li>Cambiás el destino cuando quieras, sin reimprimir</li>',
+    'solucion.demo.btn': 'Ir a la demo →',
+    'solucion.estado.disponible': 'Disponible',
+    'solucion.estado.desarrollo': 'En desarrollo',
     'galeria.label': 'Ojo visual',
     'galeria.titulo': 'Foto<br><span>grafía</span>',
     'galeria.desc': 'La misma sensibilidad que aplico a la fotografía callejera, gastronómica y documental la traigo al producto digital. El ojo que distingue una buena composición también distingue una buena interfaz.',
@@ -259,6 +287,7 @@ const translations = {
   en: {
     'nav.casos': 'Cases',
     'nav.galeria': 'Gallery',
+    'nav.menu': 'Menu',
     'nav.stack': 'Stack',
     'nav.cta': "Let's talk →",
     'hero.eyebrow': 'Digital Creator',
@@ -306,6 +335,33 @@ const translations = {
     'caso.009.eco': '<li>Digital scorekeeper for Truco, Chinchón, Escoba and Generala</li><li>Brutalist design — heavy typography, broken grids, no ornaments</li><li>Own product, open source</li>',
     'caso.010.eco': '<li>Pre-launch landing with active countdown</li><li>Online ordering system</li><li>Email capture and waitlist</li><li>Visual identity for BA artisan bakery</li>',
     'caso.link': 'View project',
+    'soluciones.label': 'Solutions',
+    'soluciones.titulo': 'Ready-made<br><span>products.</span>',
+    'soluciones.desc': "Not just custom projects — I also have solutions built on real demand, ready to adapt and deploy in weeks for your business.",
+    'solucion.01.badge': 'The differentiator',
+    'solucion.01.nombre': 'WhatsApp AI Agent',
+    'solucion.01.bajada': 'An employee that never sleeps. Handles your business WhatsApp 24/7: answers questions, books reservations and pings you when it needs you.',
+    'solucion.01.eco': '<li>Answers prices, hours and questions instantly, in your tone</li><li>Books reservations on its own, straight to your panel</li><li>Hands off to a human when the chat calls for it</li><li>You approve sensitive messages before they go out</li><li>Learns your menu, your services and your rules</li><li>Handles 30 chats at once on a busy Saturday night</li>',
+    'solucion.01.chat1': 'Hi! Do you have a table for 4 today at 9pm?',
+    'solucion.01.chat2': 'Yes! Table for 4 available at 9:00 PM. Should I book it under your name?',
+    'solucion.01.chat3': 'Sure, John',
+    'solucion.01.chat4': "Done John, reservation confirmed for today 9:00 PM 🍻<span class=\"chat-check\">✓✓</span>",
+    'solucion.02.nombre': 'Reservation system',
+    'solucion.02.bajada': 'Your own booking page, shareable link',
+    'solucion.02.eco': '<li>Automatic confirmation to the customer</li><li>Reminders to cut down no-shows</li><li>Configurable hours, capacity and blocked days</li>',
+    'solucion.03.nombre': 'Digital menu',
+    'solucion.03.bajada1': "Your menu on your customer's phone. No app, no download. QR → done.",
+    'solucion.03.bajada2': 'Menu with photos, categories and prices',
+    'solucion.03.eco': '<li>Update prices instantly, no reprinting</li><li>QR for tables, counter or Instagram</li><li>Mark dishes as sold out with a tap</li>',
+    'solucion.04.nombre': 'Admin panel',
+    'solucion.04.bajada': 'Products, prices and stock from your phone',
+    'solucion.04.eco': "<li>Today's bookings in a single view</li><li>Metrics: what sells, when, how much</li>",
+    'solucion.05.nombre': 'Smart table',
+    'solucion.05.bajada': "One tap and your customer is in: menu, bookings and reviews. NFC sticker or 3D-printed stand, with your brand.",
+    'solucion.05.eco': "<li>No app: tap the phone and you're in</li><li>One touchpoint for menu, bookings and Google reviews</li><li>3D stand or sticker, designed with your identity</li><li>Change the destination anytime, no reprinting</li>",
+    'solucion.demo.btn': 'Go to demo →',
+    'solucion.estado.disponible': 'Available',
+    'solucion.estado.desarrollo': 'In progress',
     'galeria.label': 'Visual eye',
     'galeria.titulo': 'Photo<br><span>graphy</span>',
     'galeria.desc': 'The same sensibility I apply to street, gastronomic, and documentary photography I bring to the digital product. The eye that distinguishes a good composition also distinguishes a good interface.',
@@ -336,6 +392,10 @@ function applyLang(lang) {
 
     const galBtn = document.querySelector('.btn-galeria');
     if (galBtn) galBtn.setAttribute('data-after', lang === 'es' ? 'Ver galería →' : 'View gallery →');
+
+    document.querySelectorAll('.solucion-demo-btn').forEach(btn => {
+      btn.setAttribute('data-after', translations[lang]['solucion.demo.btn']);
+    });
 
     langLabel.textContent = lang === 'es' ? 'EN' : 'ES';
     document.documentElement.lang = lang;
@@ -382,6 +442,47 @@ if (galBtn) {
     }
   });
 }
+
+/* ── CHAT MOCKUP LOOP ── */
+const chatMockup = document.querySelector('.chat-mockup');
+if (chatMockup) {
+  const playChat = () => {
+    chatMockup.classList.remove('playing');
+    void chatMockup.offsetWidth; // reflow, forces animations to restart
+    chatMockup.classList.add('playing');
+  };
+
+  const chatObserver = new IntersectionObserver(entries => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        playChat();
+        setInterval(playChat, 7000);
+        chatObserver.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.3 });
+  chatObserver.observe(chatMockup);
+}
+
+/* ── SOLUCION DEMO BTN GLITCH ── */
+document.querySelectorAll('.solucion-card--link').forEach(card => {
+  const demoBtn = card.querySelector('.solucion-demo-btn');
+  if (!demoBtn) return;
+
+  card.addEventListener('mouseenter', () => {
+    demoBtn.classList.remove('emptying');
+    demoBtn.classList.add('filling');
+  });
+  card.addEventListener('mouseleave', () => {
+    demoBtn.classList.remove('filling');
+    demoBtn.classList.add('emptying');
+  });
+  demoBtn.addEventListener('animationend', e => {
+    if (e.animationName === 'glitch-empty') {
+      demoBtn.classList.remove('emptying');
+    }
+  });
+});
 
 /* ── CASO VIDEO hover play/pause ── */
 document.querySelectorAll('.caso-card').forEach(card => {

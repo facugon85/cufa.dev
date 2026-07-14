@@ -41,58 +41,61 @@ tickLoader();
 
 /* ── GALERÍA ── */
 const fotos = [
-  { src: 'photo33.webp',           alt: 'Fotografía 033',          num: '033',  clase: 'tall' },
-  { src: 'photo46.webp',           alt: 'Fotografía 046',          num: '046'                },
-  { src: 'photo74.webp',           alt: 'Fotografía 074',          num: '074',  clase: 'wide' },
+  { src: 'photo33.webp',           alt: 'Fotografía 033',          num: '033',  clase: 'tall', caption: 'Fiestas de la Cerveza', location: 'Entre Ríos - 2025' },
+  { src: 'photo46.webp',           alt: 'Fotografía 046',          num: '0046',               caption: 'Cumple primer año', location: 'Caba, Bs As - 2018' },
+  { src: 'photo74.webp',           alt: 'Fotografía 074',          num: '074',  clase: 'wide', caption: 'Lo de Mario', location: 'Bs As, CABA - 2017' },
   { src: 'photo4.webp',            alt: 'Fotografía 004',          num: '004'                },
   { src: 'photo67.webp',           alt: 'Fotografía 067',          num: '067',  clase: 'tall' },
-  { src: 'photo50.webp',           alt: 'Fotografía 050',          num: '050'                },
-  { src: 'photo86.webp',           alt: 'Fotografía 086',          num: '086'                },
-  { src: '_CSC1687.webp',          alt: 'Fotografía 1687',         num: '1687', clase: 'wide' },
-  { src: 'photo91.webp',           alt: 'Fotografía 091',          num: '091',  clase: 'tall' },
+  { src: 'photo50.webp',           alt: 'Fotografía 050',          num: '050',                caption: 'Skate Park', location: 'Perú - 2018' },
+  { src: '_CSC1687.webp',          alt: 'Fotografía 1687',         num: '1687', clase: 'wide', caption: 'Fiestas de la Cerveza', location: 'Entre Ríos - 2026' },
+  { src: 'photo91.webp',           alt: 'Fotografía 091',          num: '091',  clase: 'tall', caption: 'Garibaldi', location: 'Bs As, CABA - 2022' },
   { src: 'photo6.webp',            alt: 'Fotografía 006',          num: '006'                },
-  { src: 'photo89.webp',           alt: 'Fotografía 089',          num: '089'                },
-  { src: 'photo92.webp',           alt: 'Fotografía 092',          num: '092'                },
-  { src: 'photo9.webp',            alt: 'Fotografía 009',          num: '009',  clase: 'tall' },
-  { src: 'DSC_0005.webp',          alt: 'Fotografía DSC0005',      num: '0005'               },
+  { src: 'photo89.webp',           alt: 'Fotografía 089',          num: '089',                caption: 'Garibaldi', location: 'Bs As, CABA - 2022' },
+  { src: 'photo92.webp',           alt: 'Fotografía 092',          num: '092',                caption: 'Garibaldi', location: 'Bs As, CABA - 2022' },
+  { src: 'photo9.webp',            alt: 'Fotografía 009',          num: '009',  clase: 'tall', caption: 'Nina Portela', location: 'Zona Oeste - 2025' },
+  { src: 'DSC_0005.webp',          alt: 'Fotografía DSC0005',      num: '0005',               caption: 'El Emergente', location: 'Bs As, CABA - 2019' },
   { src: '_CSC0802.webp',          alt: 'Fotografía CSC0802',      num: '0802'               },
-  { src: 'garibaldi059.webp',      alt: 'Fotografía Garibaldi 059',num: 'G059', clase: 'wide' },
-  { src: '_CSC2067.webp',          alt: 'Fotografía CSC2067',      num: '2067', clase: 'tall' },
-  { src: 'DSC_0136.webp',          alt: 'Fotografía DSC0136',      num: '0136'               },
-  { src: 'IMG_0097.webp',          alt: 'Fotografía IMG0097',      num: '0097'               },
-  { src: 'DSC_1458.webp',          alt: 'Fotografía DSC1458',      num: '1458'               },
-  { src: '_CSC9057.webp',          alt: 'Fotografía CSC9057',      num: '9057', clase: 'tall' },
+  { src: 'garibaldi059.webp',      alt: 'Fotografía Garibaldi 059',num: '0059', clase: 'wide', caption: 'Garibaldi', location: 'Bs As, CABA - 2022' },
+  { src: '_CSC2067.webp',          alt: 'Fotografía CSC2067',      num: '2067', clase: 'tall', caption: 'Sanguccito', location: 'San Miguel - 2026' },
+  { src: 'DSC_0136.webp',          alt: 'Fotografía DSC0136',      num: '0136',               caption: 'El Emergente', location: 'Bs As, CABA - 2019' },
+  { src: 'IMG_0097.webp',          alt: 'Fotografía IMG0097',      num: '0097',               caption: 'Sinister Jam', location: 'Bs As, CABA - 2018' },
+  { src: 'DSC_1458.webp',          alt: 'Fotografía DSC1458',      num: '1458',               caption: 'Sinister Jam', location: 'Bs As, CABA - 2018' },
+  { src: '_CSC9057.webp',          alt: 'Fotografía CSC9057',      num: '9057', clase: 'tall', caption: 'Tributo a Nirvana', location: 'Ramos Mejía - 2025' },
   { src: 'DSC_0242.webp',          alt: 'Fotografía DSC0242',      num: '0242'               },
-  { src: 'DSC_0374-Editar-2.webp', alt: 'Fotografía DSC0374',      num: '0374', clase: 'wide' },
-  { src: '_CSC1651.webp',          alt: 'Fotografía CSC1651',      num: '1651'               },
-  { src: 'garibaldi110.webp',      alt: 'Fotografía Garibaldi 110',num: 'G110'               },
-  { src: 'DSC_0250.webp',          alt: 'Fotografía DSC0250',      num: '0250', clase: 'tall' },
-  { src: '_CSC1735.webp',          alt: 'Fotografía CSC1735',      num: '1735'               },
-  { src: 'DSC_0383.webp',          alt: 'Fotografía DSC0383',      num: '0383'               },
+  { src: 'DSC_0374-Editar-2.webp', alt: 'Fotografía DSC0374',      num: '0374', clase: 'wide', caption: 'El Emergente', location: 'Bs As, CABA - 2019' },
+  { src: '_CSC1651.webp',          alt: 'Fotografía CSC1651',      num: '1651',               caption: 'Fiestas de la Cerveza', location: 'Entre Ríos - 2025' },
+  { src: 'garibaldi110.webp',      alt: 'Fotografía Garibaldi 110',num: '0110',               caption: 'Garibaldi', location: 'Bs As, CABA - 2022' },
+  { src: 'DSC_0250.webp',          alt: 'Fotografía DSC0250',      num: '0250', clase: 'tall', caption: 'Los 15 de Delfi', location: 'Zona Oeste - 2017' },
+  { src: '_CSC1735.webp',          alt: 'Fotografía CSC1735',      num: '1735',               caption: 'Fiestas de la Cerveza', location: 'Entre Ríos - 2026' },
+  { src: 'DSC_0383.webp',          alt: 'Fotografía DSC0383',      num: '0383',               caption: 'Skate Park', location: 'Perú - 2018' },
   { src: 'segundatanda.webp',      alt: 'Fotografía Segunda Tanda',num: 'S·T',  clase: 'wide' },
-  { src: '_CSC2131.webp',          alt: 'Fotografía CSC2131',      num: '2131'               },
-  { src: 'DSC_0388.webp',          alt: 'Fotografía DSC0388',      num: '0388'               },
+  { src: '_CSC2131.webp',          alt: 'Fotografía CSC2131',      num: '2131',               caption: 'Sanguccito', location: 'San Miguel - 2026' },
+  { src: 'DSC_0388.webp',          alt: 'Fotografía DSC0388',      num: '0388',               caption: 'Skate Park', location: 'Perú - 2018' },
   { src: '_CSC5271.webp',          alt: 'Fotografía CSC5271',      num: '5271', clase: 'tall' },
-  { src: '_CSC2178.webp',          alt: 'Fotografía CSC2178',      num: '2178'               },
-  { src: 'DSC_0392-Editar.webp',   alt: 'Fotografía DSC0392',      num: '0392', clase: 'wide' },
-  { src: '_CSC2188.webp',          alt: 'Fotografía CSC2188',      num: '2188'               },
+  { src: '_CSC2178.webp',          alt: 'Fotografía CSC2178',      num: '2178',               caption: 'Sanguccito', location: 'San Miguel - 2026' },
+  { src: 'DSC_0392-Editar.webp',   alt: 'Fotografía DSC0392',      num: '0392', clase: 'wide', caption: 'Skate Park', location: 'Perú - 2018' },
+  { src: '_CSC2188.webp',          alt: 'Fotografía CSC2188',      num: '2188',               caption: 'Sanguccito', location: 'San Miguel - 2026' },
   { src: 'final33.webp',           alt: 'Fotografía Final 33',     num: 'F33'                },
   { src: '_CSC5698.webp',          alt: 'Fotografía CSC5698',      num: '5698', clase: 'tall' },
   { src: 'DSC_0567.webp',          alt: 'Fotografía DSC0567',      num: '0567'               },
   { src: 'IMG_0582.webp',          alt: 'Fotografía IMG0582',      num: '0582'               },
   { src: '_CSC8493.webp',          alt: 'Fotografía CSC8493',      num: '8493'               },
-  { src: 'DSC_7568.webp',          alt: 'Fotografía DSC7568',      num: '7568', clase: 'wide' },
-  { src: '_CSC8699.webp',          alt: 'Fotografía CSC8699',      num: '8699'               },
-  { src: '_CSC8498-6.webp',        alt: 'Fotografía CSC8498',      num: '8498', clase: 'tall' },
-  { src: 'DSC_1483.webp',          alt: 'Fotografía DSC1483',      num: '1483'               },
+  { src: 'DSC_7568.webp',          alt: 'Fotografía DSC7568',      num: '7568', clase: 'wide', caption: 'Casamiento Ale y Pau', location: 'Bs As, CABA - 2018' },
+  { src: '_CSC8699.webp',          alt: 'Fotografía CSC8699',      num: '8699',               caption: 'Fiestas de la Cerveza', location: 'Entre Ríos - 2025' },
+  { src: '_CSC8498-6.webp',        alt: 'Fotografía CSC8498',      num: '8498', clase: 'tall', caption: 'Gastronomía', location: 'Ciudadela - 2023' },
+  { src: 'DSC_1483.webp',          alt: 'Fotografía DSC1483',      num: '1483',               caption: 'Sinister Jam', location: 'Bs As, CABA - 2018' },
+  { src: '_CSC3424-82.webp',       alt: 'Fotografía CSC3424',      num: '3424', clase: 'tall' },
 ];
 
 function renderGrid() {
   const grid = document.getElementById('galeria-grid');
-  grid.innerHTML = fotos.map(({ src, alt, num, clase }) => `
+  grid.innerHTML = fotos.map(({ src, alt, num, clase, caption, location }) => `
     <div class="grid-item${clase ? ' ' + clase : ''}">
       <img src="img/fotos/${src}" alt="${alt}" loading="lazy">
-      <div class="grid-overlay"><span class="grid-num">${num}</span></div>
+      <div class="grid-overlay">
+        ${caption ? `<div class="grid-caption"><span class="grid-caption-title">${caption}</span>${location ? `<span class="grid-caption-location">${location}</span>` : ''}</div>` : ''}
+        <span class="grid-num">${num}</span>
+      </div>
     </div>
   `).join('');
 }
