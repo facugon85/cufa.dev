@@ -1,0 +1,11 @@
+BEGIN:VCARD
+VERSION:3.0
+N:González;Facundo;;;
+FN:Facundo González (CUFA)
+ORG:CUFA
+TITLE:Full Stack Developer & Visual Producer
+TEL;TYPE=CELL:+5491168980563
+EMAIL:facundonic.gonzalez@gmail.com
+URL:https://cufagon.xyz
+X-SOCIALPROFILE;TYPE=instagram:https://instagram.com/cufa.dev
+END:VCARD
