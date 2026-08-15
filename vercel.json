@@ -6,6 +6,13 @@
       "headers": [
         { "key": "X-Content-Type-Options", "value": "nosniff" }
       ]
+    },
+    {
+      "source": "/contact.vcf",
+      "headers": [
+        { "key": "Content-Type", "value": "text/vcard; charset=utf-8" },
+        { "key": "Content-Disposition", "value": "inline; filename=\"facundo-gonzalez.vcf\"" }
+      ]
     }
   ]
 }
