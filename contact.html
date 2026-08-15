@@ -38,9 +38,9 @@
       max-width: 380px;
       background: var(--surface);
       border: 1px solid var(--border);
-      padding: 40px 28px 28px;
       text-align: center;
       position: relative;
+      overflow: hidden;
     }
     .card::before {
       content: '';
@@ -57,22 +57,24 @@
       transform: translateY(14px);
       animation: fade-up 0.5s cubic-bezier(0.4, 0, 0.2, 1) forwards;
     }
+    .top { padding: 36px 28px 24px; }
     .avatar { animation-delay: 0.15s; }
     h1 { animation-delay: 0.25s; }
     .role { animation-delay: 0.32s; }
     .btn-primary { animation-delay: 0.4s; }
-    .links .link:nth-child(1) { animation-delay: 0.46s; }
-    .links .link:nth-child(2) { animation-delay: 0.52s; }
-    .links .link:nth-child(3) { animation-delay: 0.58s; }
-    .links .link:nth-child(4) { animation-delay: 0.64s; }
-    footer.dev-credit { animation-delay: 0.7s; }
+    .quick { animation-delay: 0.46s; }
+    .bio { animation-delay: 0.52s; }
+    .details .row:nth-child(1) { animation-delay: 0.58s; }
+    .details .row:nth-child(2) { animation-delay: 0.64s; }
+    .details .row:nth-child(3) { animation-delay: 0.7s; }
+    footer.dev-credit { animation-delay: 0.78s; }
     @keyframes line-in { to { transform: scaleX(1); } }
     @keyframes fade-up { to { opacity: 1; transform: translateY(0); } }
     .avatar {
       width: 92px;
       height: 92px;
       border-radius: 50%;
-      margin: 0 auto 22px;
+      margin: 0 auto 20px;
       object-fit: cover;
       border: 2px solid var(--orange);
       filter: grayscale(1);
@@ -82,16 +84,16 @@
       font-size: 32px;
       letter-spacing: 0.05em;
       text-transform: uppercase;
-      margin-bottom: 8px;
+      margin-bottom: 6px;
     }
     .role {
       font-family: var(--mono);
       color: var(--text-muted);
       font-size: 11px;
-      letter-spacing: 0.15em;
-      text-transform: uppercase;
-      margin-bottom: 30px;
+      letter-spacing: 0.1em;
+      margin-bottom: 24px;
     }
+    .role b { color: var(--text); font-weight: 700; }
     .btn-primary {
       display: block;
       width: 100%;
@@ -104,12 +106,41 @@
       letter-spacing: 0.12em;
       text-transform: uppercase;
       padding: 16px;
-      margin-bottom: 22px;
       transition: background 0.2s;
     }
     .btn-primary:hover, .btn-primary:active { background: var(--orange-dim); }
-    .links { display: flex; flex-direction: column; gap: 10px; }
-    .link {
+    .quick {
+      display: flex;
+      justify-content: center;
+      gap: 14px;
+      padding: 22px 28px;
+      border-top: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+    }
+    .quick a {
+      width: 46px;
+      height: 46px;
+      border-radius: 50%;
+      background: var(--surface2);
+      border: 1px solid var(--border);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 18px;
+      text-decoration: none;
+      filter: grayscale(1);
+      transition: border-color 0.2s, filter 0.2s;
+    }
+    .quick a:hover, .quick a:active { border-color: var(--orange); filter: grayscale(0); }
+    .bio {
+      font-size: 13px;
+      line-height: 1.6;
+      color: var(--text-muted);
+      padding: 22px 28px;
+      border-bottom: 1px solid var(--border);
+    }
+    .details { padding: 18px 20px 28px; display: flex; flex-direction: column; gap: 10px; }
+    .row {
       display: flex;
       align-items: center;
       gap: 12px;
@@ -120,14 +151,15 @@
       color: var(--text);
       font-family: var(--mono);
       font-size: 12px;
-      letter-spacing: 0.08em;
-      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      text-align: left;
       transition: border-color 0.2s;
     }
-    .link:hover, .link:active { border-color: var(--orange); }
-    .link .ico { font-size: 16px; width: 20px; text-align: center; filter: grayscale(1); }
+    .row:hover, .row:active { border-color: var(--orange); }
+    .row .ico { font-size: 16px; width: 20px; text-align: center; filter: grayscale(1); flex-shrink: 0; }
+    .row span.val { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
     footer.dev-credit {
-      margin-top: 30px;
+      padding: 0 28px 26px;
       text-align: center;
       font-family: var(--mono);
       font-size: 10px;
@@ -147,24 +179,31 @@
 </head>
 <body>
   <main class="card">
-    <img class="avatar reveal" src="/img/1cufa.png" alt="Facundo González">
-    <h1 class="reveal">Facundo Gonzalez</h1>
-    <p class="role reveal">Full Stack Developer &amp; Visual Producer</p>
+    <div class="top">
+      <img class="avatar reveal" src="/img/1cufa.png" alt="Facundo González">
+      <h1 class="reveal">Facundo González</h1>
+      <p class="role reveal"><b>Full Stack Developer</b> &amp; Visual Producer · CUFA</p>
+      <a class="btn-primary reveal" href="/contact.vcf">Guardar contacto</a>
+    </div>
 
-    <a class="btn-primary reveal" href="/contact.vcf">Guardar contacto</a>
+    <div class="quick reveal">
+      <a href="https://wa.me/5491168980563" target="_blank" rel="noopener" aria-label="WhatsApp">💬</a>
+      <a href="tel:+5491168980563" aria-label="Llamar">📞</a>
+      <a href="https://instagram.com/cufa.dev" target="_blank" rel="noopener" aria-label="Instagram">📸</a>
+      <a href="mailto:facundonic.gonzalez@gmail.com" aria-label="Email">✉️</a>
+    </div>
 
-    <div class="links">
-      <a class="link reveal" href="https://cufagon.xyz" target="_blank" rel="noopener">
-        <span class="ico">🌐</span> cufagon.xyz
+    <p class="bio reveal">Desarrollo webs y apps a medida para negocios y eventos: landings, e-commerce, paneles de administración e integraciones de pago. Con base en Buenos Aires, trabajo con clientes de toda Argentina.</p>
+
+    <div class="details">
+      <a class="row reveal" href="mailto:facundonic.gonzalez@gmail.com">
+        <span class="ico">✉️</span> <span class="val">facundonic.gonzalez@gmail.com</span>
       </a>
-      <a class="link reveal" href="https://wa.me/5491168980563" target="_blank" rel="noopener">
-        <span class="ico">💬</span> WhatsApp
+      <a class="row reveal" href="https://cufagon.xyz" target="_blank" rel="noopener">
+        <span class="ico">🌐</span> <span class="val">cufagon.xyz</span>
       </a>
-      <a class="link reveal" href="https://instagram.com/cufa.dev" target="_blank" rel="noopener">
-        <span class="ico">📸</span> Instagram
-      </a>
-      <a class="link reveal" href="mailto:facundonic.gonzalez@gmail.com">
-        <span class="ico">✉️</span> Email
+      <a class="row reveal" href="tel:+5491168980563">
+        <span class="ico">📞</span> <span class="val">+54 9 11 6898-0563</span>
       </a>
     </div>
 
