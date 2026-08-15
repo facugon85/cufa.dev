@@ -27,7 +27,7 @@
       font-family: var(--body);
       background: var(--bg);
       color: var(--text);
-      min-height: 100vh;
+      min-height: 100dvh;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -36,11 +36,15 @@
     .card {
       width: 100%;
       max-width: 380px;
+      max-height: calc(100dvh - 32px);
       background: var(--surface);
       border: 1px solid var(--border);
       text-align: center;
       position: relative;
       overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
     }
     .card::before {
       content: '';
@@ -50,7 +54,7 @@
       background: var(--orange);
       transform: scaleX(0);
       transform-origin: left;
-      animation: line-in 0.5s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+      animation: line-in 0.6s steps(1) forwards;
     }
     .reveal {
       opacity: 0;
@@ -68,7 +72,14 @@
     .details .row:nth-child(2) { animation-delay: 0.64s; }
     .details .row:nth-child(3) { animation-delay: 0.7s; }
     footer.dev-credit { animation-delay: 0.78s; }
-    @keyframes line-in { to { transform: scaleX(1); } }
+    @keyframes line-in {
+      0%   { transform: scaleX(0); background: #00ffcc; }
+      15%  { transform: scaleX(0.4); background: #00ffcc; }
+      30%  { transform: scaleX(0.7); background: #ff0066; }
+      45%  { transform: scaleX(0.5); background: #ff0066; }
+      60%  { transform: scaleX(1); background: var(--orange-dim); }
+      100% { transform: scaleX(1); background: var(--orange); }
+    }
     @keyframes fade-up { to { opacity: 1; transform: translateY(0); } }
     .avatar {
       width: 60px;
@@ -85,6 +96,35 @@
       letter-spacing: 0.05em;
       text-transform: uppercase;
       margin-bottom: 3px;
+      position: relative;
+    }
+    h1::before, h1::after {
+      content: attr(data-text);
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%;
+      opacity: 0;
+      pointer-events: none;
+    }
+    h1::before { color: #00ffcc; animation: glitchA 0.7s steps(1) 1 forwards; animation-delay: 0.25s; }
+    h1::after { color: #ff0066; animation: glitchB 0.7s steps(1) 1 forwards; animation-delay: 0.27s; }
+    @keyframes glitchA {
+      0%   { opacity: 0; }
+      8%   { opacity: 0.8; clip-path: inset(0 0 60% 0); transform: translate(-3px, 0); }
+      16%  { opacity: 0.8; clip-path: inset(30% 0 30% 0); transform: translate(2px, 0); }
+      24%  { opacity: 0; }
+      55%  { opacity: 0.7; clip-path: inset(60% 0 0 0); transform: translate(-2px, 0); }
+      63%  { opacity: 0; }
+      100% { opacity: 0; }
+    }
+    @keyframes glitchB {
+      0%   { opacity: 0; }
+      10%  { opacity: 0.8; clip-path: inset(20% 0 55% 0); transform: translate(3px, 0); }
+      18%  { opacity: 0.8; clip-path: inset(50% 0 10% 0); transform: translate(-2px, 0); }
+      26%  { opacity: 0; }
+      58%  { opacity: 0.7; clip-path: inset(0 0 65% 0); transform: translate(2px, 0); }
+      66%  { opacity: 0; }
+      100% { opacity: 0; }
     }
     .role {
       font-family: var(--mono);
@@ -131,9 +171,9 @@
       font-size: 12px;
       letter-spacing: 0.04em;
       text-align: left;
-      transition: border-color 0.2s;
+      transition: border-color 0.2s, transform 0.15s;
     }
-    .row:hover, .row:active { border-color: var(--orange); }
+    .row:hover, .row:active { border-color: var(--orange); transform: translateX(3px); }
     .row:hover .ico svg, .row:active .ico svg { stroke: var(--orange); }
     .row .ico { width: 18px; height: 18px; flex-shrink: 0; display: flex; align-items: center; justify-content: center; }
     .row .ico svg { width: 18px; height: 18px; stroke: var(--text-muted); fill: none; stroke-width: 1.6; stroke-linecap: round; stroke-linejoin: round; transition: stroke 0.2s; }
@@ -155,13 +195,17 @@
       letter-spacing: 0.1em;
       text-decoration: none;
     }
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after { animation: none !important; transition: none !important; }
+      .reveal { opacity: 1; transform: none; }
+    }
   </style>
 </head>
 <body>
   <main class="card">
     <div class="top">
       <img class="avatar reveal" src="/img/1cufa.png" alt="Facundo Gonzalez">
-      <h1 class="reveal">Facundo Gonzalez</h1>
+      <h1 class="reveal" data-text="Facundo Gonzalez">Facundo Gonzalez</h1>
       <p class="role reveal"><b>Full Stack Developer</b> &amp; Visual Producer · CUFA</p>
       <a class="btn-primary reveal" href="/contact.vcf">Guardar contacto</a>
     </div>
