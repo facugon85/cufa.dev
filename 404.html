@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>404 · CUFA</title>
+  <meta name="robots" content="noindex">
+  <link rel="icon" type="image/png" href="img/logo128.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="img/logo128.png">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Space+Mono:wght@400;700&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #0a0a0a;
+      --surface: #111111;
+      --surface2: #1a1a1a;
+      --orange: #ff4d00;
+      --orange-dim: #cc3d00;
+      --text: #f0ede8;
+      --text-muted: #888880;
+      --text-dim: #444440;
+      --border: rgba(255,255,255,0.07);
+      --mono: 'Space Mono', monospace;
+      --display: 'Bebas Neue', sans-serif;
+      --body: 'DM Sans', sans-serif;
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    ::-webkit-scrollbar { width: 6px; }
+    ::-webkit-scrollbar-track { background: var(--bg); }
+    ::-webkit-scrollbar-thumb { background: var(--orange); border-radius: 0; }
+    html { scrollbar-color: var(--orange) var(--bg); scrollbar-width: thin; }
+
+    body {
+      font-family: var(--body);
+      background: var(--bg);
+      color: var(--text);
+      min-height: 100dvh;
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      overflow-x: hidden;
+    }
+
+    nav {
+      position: relative;
+      z-index: 2;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1.5rem 3rem;
+    }
+
+    .nav-logo {
+      font-family: var(--display);
+      font-size: 2rem;
+      color: var(--orange);
+      letter-spacing: 0.05em;
+      text-decoration: none;
+    }
+
+    .nav-back {
+      font-family: var(--mono);
+      font-size: 10px;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--text-muted);
+      text-decoration: none;
+      transition: color 0.25s ease, transform 0.25s ease;
+    }
+    .nav-back:hover { color: var(--orange); transform: translateX(-3px); }
+
+    main {
+      position: relative;
+      z-index: 2;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 2rem 1.5rem 4rem;
+    }
+
+    .eyebrow {
+      font-family: var(--mono);
+      font-size: 11px;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--orange);
+      margin-bottom: 1.5rem;
+    }
+    .eyebrow::before { content: '// '; opacity: 0.5; }
+
+    .code {
+      font-family: var(--display);
+      font-size: clamp(6rem, 24vw, 14rem);
+      line-height: 0.85;
+      letter-spacing: 0.01em;
+      color: var(--text);
+      position: relative;
+      user-select: none;
+    }
+    .code span { color: var(--orange); }
+
+    .code:hover {
+      animation: glitch 0.4s steps(2, end) infinite;
+    }
+    @keyframes glitch {
+      0% { text-shadow: 2px 0 var(--orange), -2px 0 var(--orange-dim); transform: translate(0,0); }
+      50% { text-shadow: -2px 0 var(--orange), 2px 0 var(--orange-dim); transform: translate(1px,-1px); }
+      100% { text-shadow: 2px 0 var(--orange), -2px 0 var(--orange-dim); transform: translate(0,0); }
+    }
+
+    .msg {
+      font-family: var(--display);
+      font-size: clamp(1.4rem, 3.5vw, 2.1rem);
+      letter-spacing: 0.01em;
+      margin: 1rem 0 0.75rem;
+    }
+
+    .sub {
+      max-width: 460px;
+      color: var(--text-muted);
+      font-size: 14px;
+      line-height: 1.6;
+      margin-bottom: 2.5rem;
+    }
+
+    .actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+      justify-content: center;
+      margin-bottom: 3.5rem;
+    }
+
+    .btn {
+      font-family: var(--mono);
+      font-size: 11px;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      text-decoration: none;
+      padding: 0.85rem 1.4rem;
+      transition: background 0.2s, color 0.2s, border-color 0.2s, transform 0.2s;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    .btn-primary {
+      color: var(--bg);
+      background: var(--orange);
+    }
+    .btn-primary:hover { background: var(--orange-dim); transform: translateY(-2px); }
+    .btn-ghost {
+      color: var(--text);
+      border: 1px solid var(--border);
+      background: transparent;
+    }
+    .btn-ghost:hover { border-color: var(--orange); color: var(--orange); transform: translateY(-2px); }
+
+    .links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem 1.75rem;
+      justify-content: center;
+      padding-top: 2rem;
+      border-top: 1px solid var(--border);
+      width: 100%;
+      max-width: 460px;
+    }
+    .links a {
+      font-family: var(--mono);
+      font-size: 10px;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--text-muted);
+      text-decoration: none;
+      transition: color 0.25s ease;
+    }
+    .links a:hover { color: var(--orange); }
+
+    footer {
+      position: relative;
+      z-index: 2;
+      text-align: center;
+      padding: 1.5rem;
+      font-family: var(--mono);
+      font-size: 10px;
+      color: var(--text-dim);
+      letter-spacing: 0.05em;
+    }
+
+    @media (max-width: 480px) {
+      nav { padding: 1.25rem 1.5rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="index.html" class="nav-logo">CUFA.</a>
+    <a href="index.html" class="nav-back">← Volver al inicio</a>
+  </nav>
+
+  <main>
+    <p class="eyebrow">Error 404</p>
+    <h1 class="code">4<span>0</span>4</h1>
+    <p class="msg">Esta página no existe.</p>
+    <p class="sub">
+      O se movió, o nunca estuvo, o la tipeaste mal.
+      De las tres, la única que puedo arreglar desde acá es traerte de vuelta.
+    </p>
+
+    <div class="actions">
+      <a href="index.html" class="btn btn-primary">Volver al inicio →</a>
+      <a href="index.html#casos" class="btn btn-ghost">Ver casos</a>
+    </div>
+
+    <nav class="links">
+      <a href="index.html#casos">Casos</a>
+      <a href="galeria.html">Galería</a>
+      <a href="index.html#stack">Stack</a>
+      <a href="index.html#contacto">Contacto</a>
+      <a href="contact.html">Tarjeta digital</a>
+    </nav>
+  </main>
+
+  <footer>
+    CUFA · Buenos Aires
+  </footer>
+
+</body>
+</html>
