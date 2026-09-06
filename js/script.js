@@ -153,6 +153,48 @@ function updateClock() {
 updateClock();
 setInterval(updateClock, 1000);
 
+/* ── WEATHER (Open-Meteo + geolocalización por IP) ── */
+function updateWeather() {
+  const el = document.getElementById('weather');
+  if (!el) return;
+
+  const CACHE_KEY = 'cufa_weather_cache';
+  const CACHE_MS = 30 * 60 * 1000;
+  const FALLBACK = { lat: -34.6, lon: -58.38, city: 'Buenos Aires' };
+
+  const cached = JSON.parse(localStorage.getItem(CACHE_KEY) || 'null');
+  if (cached && Date.now() - cached.ts < CACHE_MS) {
+    el.textContent = cached.text;
+    return;
+  }
+
+  const fetchWeather = ({ lat, lon, city }) => {
+    fetch(`https://api.open-meteo.com/v1/forecast?latitude=${lat}&longitude=${lon}&current=temperature_2m`)
+      .then(res => res.json())
+      .then(data => {
+        const temp = Math.round(data.current.temperature_2m);
+        const text = `${temp}°C · ${city}`;
+        el.textContent = text;
+        localStorage.setItem(CACHE_KEY, JSON.stringify({ text, ts: Date.now() }));
+      })
+      .catch(() => {
+        el.textContent = '--°C';
+      });
+  };
+
+  fetch('https://ipapi.co/json/')
+    .then(res => res.json())
+    .then(loc => {
+      if (loc.latitude && loc.longitude) {
+        fetchWeather({ lat: loc.latitude, lon: loc.longitude, city: loc.city || FALLBACK.city });
+      } else {
+        fetchWeather(FALLBACK);
+      }
+    })
+    .catch(() => fetchWeather(FALLBACK));
+}
+updateWeather();
+
 /* ── SCROLL REVEAL + COUNTERS ── */
 const reveals = document.querySelectorAll('.reveal, .reveal-grid');
 const io = new IntersectionObserver(entries => {
@@ -204,6 +246,7 @@ const translations = {
     'hero.eyebrow': 'Creador Digital',
     'hero.tagline': 'Desarrollo web · Automatización<br>Producción visual · SaaS escalable<br>Buenos Aires, Argentina',
     'hero.hora': 'Hora',
+    'hero.clima': 'Clima',
     'hero.estado.label': 'Estado',
     'hero.estado.value': 'Disponible para proyectos',
     'hero.btn.proyectos': 'Ver Proyectos ↓',
@@ -284,6 +327,9 @@ const translations = {
     'solucion.05.nombre': 'Mesa inteligente',
     'solucion.05.bajada': 'Un toque del celular y el cliente está adentro: carta, reservas y reseñas. Sticker NFC o stand impreso en 3D, con tu marca.',
     'solucion.05.eco': '<li>Sin app: apoya el celular y listo</li><li>Un solo punto que lleva a carta, reservas y reseñas en Google</li><li>Stand 3D o sticker, diseñado con tu identidad</li><li>Cambiás el destino cuando quieras, sin reimprimir</li>',
+    'solucion.06.nombre': 'Tarjeta de fidelización digital',
+    'solucion.06.bajada': 'El cliente escanea un QR y la tarjeta se guarda sola en su Apple Wallet o Google Wallet. Sin apps, sin fricción.',
+    'solucion.06.eco': '<li>Alta con QR: nombre, contacto y consentimiento explícito</li><li>Pase nativo en el Wallet del celular, sin instalar nada</li><li>Panel para el negocio: ve clientes y manda campañas</li><li>Solo le escribís a quien dio su consentimiento</li>',
     'solucion.demo.btn': 'Ir a la demo →',
     'solucion.estado.disponible': 'Disponible',
     'solucion.estado.desarrollo': 'En desarrollo',
@@ -308,6 +354,7 @@ const translations = {
     'hero.eyebrow': 'Digital Creator',
     'hero.tagline': 'Web development · Automation<br>Visual production · Scalable SaaS<br>Buenos Aires, Argentina',
     'hero.hora': 'Time',
+    'hero.clima': 'Weather',
     'hero.estado.label': 'Status',
     'hero.estado.value': 'Available for projects',
     'hero.btn.proyectos': 'View Projects ↓',
@@ -388,6 +435,9 @@ const translations = {
     'solucion.05.nombre': 'Smart table',
     'solucion.05.bajada': "One tap and your customer is in: menu, bookings and reviews. NFC sticker or 3D-printed stand, with your brand.",
     'solucion.05.eco': "<li>No app: tap the phone and you're in</li><li>One touchpoint for menu, bookings and Google reviews</li><li>3D stand or sticker, designed with your identity</li><li>Change the destination anytime, no reprinting</li>",
+    'solucion.06.nombre': 'Digital loyalty card',
+    'solucion.06.bajada': 'The customer scans a QR and the card saves itself to their Apple Wallet or Google Wallet. No apps, no friction.',
+    'solucion.06.eco': '<li>Sign-up via QR: name, contact and explicit consent</li><li>Native pass in the phone\'s Wallet, nothing to install</li><li>Dashboard for the business: see customers, send campaigns</li><li>Only message people who gave consent</li>',
     'solucion.demo.btn': 'Go to demo →',
     'solucion.estado.disponible': 'Available',
     'solucion.estado.desarrollo': 'In progress',
